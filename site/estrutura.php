@@ -43,23 +43,17 @@
 		  	case 6:{
 		  		pagina = "s.php";
 		  	}break;
-
-		  	case 7:{
-
-		  	}break;
-
-		  	case 8:{
-
-		  	}break;
+		  	default:{
+		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>"
+		  	}
 		  }
-
 
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
 		}
 	</script>
 </head>
-<body onload="loadDoc()">
+<body onload="loadDoc(1)">
 	<nav class="lBlue nav-extended">
 		<div class="container nav-wrapper">
 			<a href="#" class="brand-logo dBlue-txt">Shared Notes</a>
@@ -118,6 +112,32 @@
   		
   	</div>
   </div>
+
+  <footer class="page-footer lBlue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright dSBlue">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 </body>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  	<script>
