@@ -19,7 +19,7 @@
         	<a href="#">
 							<div class="perfil-tres" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
 								<div class="valign-wrapper">
-									<img class=" circle" src="a.png" width="50" >
+									<img class=" circle" src="a.jpg" width="50" >
 								</div>
 								<div class="truncate">
 									Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
