@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" href="../imagens/s/logo.ico" />
 	<meta charset="utf-8">
-	<title></title>
+	<title>Home - Shared Notes</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
@@ -22,26 +23,32 @@
 		  switch(doc){
 		  	case 1:{
 		  		pagina = "h.php";
+		  		document.title = "Home - Shared Notes";
 		  	}break;
 
 		  	case 2:{
 		  		pagina = "ar.php";
+		  		document.title = "Atividades recentes - Shared Notes";
 		  	}break;
 
 		  	case 3:{
 		  		pagina = "pup.php";
+		  		document.title = "Projeto novo - Shared Notes";
 		  	}break;
 
 		  	case 4:{
 		  		pagina = "sp.php";
+		  		document.title = "Projetos - Shared Notes";
 		  	}break;
 
 		  	case 5:{
 		  		pagina = "p.php";
+		  		document.title = "Perguntas - Shared Notes";
 		  	}break;
 
 		  	case 6:{
 		  		pagina = "s.php";
+		  		document.title = "Seguidores - Shared Notes";
 		  	}break;
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>"
@@ -56,7 +63,7 @@
 <body onload="loadDoc(1)">
 	<nav class="lBlue nav-extended">
 		<div class="container nav-wrapper">
-			<a href="#" class="brand-logo dBlue-txt">Shared Notes</a>
+			<a href="#" class="brand-logo dBlue-txt"><img src="../imagens/s/logo.png" width="64"></a>
 
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
@@ -107,21 +114,22 @@
 	  </nav>
   </nav>
 
-  <div class="section no-pad-bot">
-  	<div class="container" id="loader" style="min-height: 1000px; background-color: #fcfcfc">
+  <div class="section">
+  	<div class="container" id="loader" style="min-height: 600px; background-color: #fcfcfc;">
   		
   	</div>
   </div>
 
-  <footer class="page-footer lBlue">
+  <footer class="page-footer lBlue" >
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <h4 class="white-text header col s12 light">Junte-se a discussão</h4>
+          <p class="grey-text text-lighten-4">Você pode nos contatar diretamente pelo nosso chat do **.</p>
+          <a class="waves-effect dSBlue btn" >Chat</a>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text">Siga-nos</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -133,8 +141,8 @@
     </div>
     <div class="footer-copyright dSBlue">
       <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © 2018 The Shared Inc., Todos os direitos reservados.
+      <a class="grey-text text-lighten-4 right" href="#!">Termos de Serviço - Privacidade</a>
       </div>
     </div>
   </footer>
