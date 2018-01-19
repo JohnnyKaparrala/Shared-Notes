@@ -26,62 +26,44 @@
 		  			break;
 		  	}
 		  }
-		  switch(doc){
+		   switch(doc){
 		  	case 1:{
 		  		pagina = "h.php";
 		  		document.title = "Home - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("1").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 
 		  	case 2:{
 		  		pagina = "ar.php";
 		  		document.title = "Atividades recentes - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("2").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 
 		  	case 3:{
 		  		pagina = "pup.php";
 		  		document.title = "Projeto novo - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("3").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 
 		  	case 4:{
 		  		pagina = "sp.php";
 		  		document.title = "Projetos - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("4").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 
 		  	case 5:{
 		  		pagina = "p.php";
 		  		document.title = "Perguntas - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("5").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 
 		  	case 6:{
 		  		pagina = "s.php";
 		  		document.title = "Seguidores - Shared Notes";
-<<<<<<< HEAD
 		  		document.getElementById("6").classList.add('active');
-=======
->>>>>>> parent of e70af1b... A
 		  	}break;
 		  	default:{
-		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>"
+		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
 		  }
 
@@ -113,45 +95,31 @@
 					<li>
 		        	<a>
 						<div>
-							<i class="large material-icons" title="Configurações">settings</i>
+						<i class="large material-icons" title="Configurações">settings</i>
 						</div>
 					</a>
-<<<<<<< HEAD
 		        </li>
 					<li>
 						<a>
 							<div>
 								<i class="large material-icons" title="Sair">power_settings_new</i>
-							</div> xzxzxzzsSSSdsdsasSSS
+							</div>
 						</a>
 		      </li>
 		    </ul>
 			</div>
 		</nav>
+	</div>
 	<div id="sub_menu" style="width: 100%">
-		<nav  class="dBlue valign-wrapper " style="height: 51px;">
-			<div class="nav-content container " style="z-index: 100;">
-		    <ul class="tabs tabs-transparent">
-		      <li onclick = 'loadDoc(1)' id="1" class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
-			    <li onclick = 'loadDoc(2)' id="2" class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
-			    <li onclick = 'loadDoc(3)' id="3" class="tab" title="Publicar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
-			    <li onclick = 'loadDoc(4)' id="4" class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
-			    <li onclick = 'loadDoc(5)' id="5" class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
-			    <li onclick = 'loadDoc(6)' id="6" class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
-=======
-	      </li>
-	    </ul>
-		</div>
 		<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position: sticky;">
 			<div class="nav-content container ">
 	      <ul class="tabs tabs-transparent">
-	        <li onclick = 'loadDoc(1)' class="tab active" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
-			    <li onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
-			    <li onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
-			    <li onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
-			    <li onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
-			    <li onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
->>>>>>> parent of e70af1b... A
+	        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
+			    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
+			    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
+			    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
+			    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
+			    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
 			    <li class="right">
 				    <div class="input-field">
 				    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
@@ -163,7 +131,7 @@
 		</nav>
 	</div>
 
-	<div class="container" id="loader" style="min-height: 6005px; background-color: #fcfcfc;">
+	<div class="container" id="loader" style="min-height: 1005px; background-color: #fcfcfc;">
 	</div>
 
   <footer class="page-footer lBlue" >
