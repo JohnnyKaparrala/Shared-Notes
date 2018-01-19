@@ -62,6 +62,13 @@
 		  		document.title = "Seguidores - Shared Notes";
 		  		document.getElementById("6").classList.add('active');
 		  	}break;
+
+		  	case 7:{
+		  		pagina = "pr.php";
+		  		document.title = "Seguidores - Shared Notes";
+		  		document.getElementById("6").classList.add('active');
+		  	}break;
+
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
@@ -77,12 +84,12 @@
 	<div>
 		<nav class="lBlue nav">
 			<div class="container nav-wrapper">
-				<a href="#" class="brand-logo dBlue-txt"><img src="../imagens/s/logo.png" width="64"></a>
+				<a href="#" class="brand-logo dBlue-txt" title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
 
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 		      <li>
 		      	<a href="#">
-								<div class="perfil-dois" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+								<div class="perfil-dois" id="7" onclick = 'loadDoc(7)' title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
 									<div class="valign-wrapper">
 										<img class=" circle" src="a.jpg" width="50" >
 									</div>
@@ -95,14 +102,14 @@
 					<li>
 		        	<a>
 						<div>
-						<i class="large material-icons" title="Configurações">settings</i>
+						<i class=" tab large material-icons" title="Configurações">settings</i>
 						</div>
 					</a>
 		        </li>
 					<li>
 						<a>
 							<div>
-								<i class="large material-icons" title="Sair">power_settings_new</i>
+								<i class="tab large material-icons" title="Sair">power_settings_new</i>
 							</div>
 						</a>
 		      </li>
@@ -120,7 +127,7 @@
 		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
 		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
 		    <li class="right">
-			    <div class="input-field">
+			    <div class="input-field" title="Procurar no site">
 			    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
 	        	<input id="search" type="search" style="width: 220px">
 	   		  </div>
@@ -129,7 +136,7 @@
 	  </div>
 	</nav>
 
-	<div class="container" id="loader" style="min-height: 1005px; background-color: #fcfcfc; margin-top: 51px">
+	<div class="container" id="loader" style="min-height: 800px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
 	</div>
 
   <footer class="page-footer lBlue" >
