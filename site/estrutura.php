@@ -19,49 +19,48 @@
 		  };
 
 		  var pagina;
-		  var selectIndex;
 
+		  for(i = 1; i <= 6; i++){
+		  	if ( $("#" + i).hasClass("active") ){
+		  		$("#" + i).removeClass("active");
+		  			break;
+		  	}
+		  }
 		  switch(doc){
 		  	case 1:{
 		  		pagina = "h.php";
 		  		document.title = "Home - Shared Notes";
 		  		document.getElementById("1").classList.add('active');
-				//	document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 
 		  	case 2:{
 		  		pagina = "ar.php";
 		  		document.title = "Atividades recentes - Shared Notes";
 		  		document.getElementById("2").classList.add('active');
-				//	document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 
 		  	case 3:{
 		  		pagina = "pup.php";
 		  		document.title = "Projeto novo - Shared Notes";
 		  		document.getElementById("3").classList.add('active');
-				//	document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 
 		  	case 4:{
 		  		pagina = "sp.php";
 		  		document.title = "Projetos - Shared Notes";
 		  		document.getElementById("4").classList.add('active');
-				//	document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 
 		  	case 5:{
 		  		pagina = "p.php";
 		  		document.title = "Perguntas - Shared Notes";
 		  		document.getElementById("5").classList.add('active');
-				//document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 
 		  	case 6:{
 		  		pagina = "s.php";
 		  		document.title = "Seguidores - Shared Notes";
 		  		document.getElementById("6").classList.add('active');
-					document.getElementById("MyElement").classList.remove('MyClass');
 		  	}break;
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>"
@@ -74,43 +73,47 @@
 	</script>
 </head>
 <body onload="loadDoc(1)">
-	<nav class="lBlue nav-extended">
-		<div class="container nav-wrapper">
-			<a href="#" class="brand-logo dBlue-txt"><img src="../imagens/s/logo.png" width="64"></a>
 
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li>
-        	<a href="#">
-							<div class="perfil-tres" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-								<div class="valign-wrapper">
-									<img class=" circle" src="a.jpg" width="50" >
-								</div>
-								<div class="truncate">
-									Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-								</div>
-						</div>
-					</a>
-				</li>
-				<li>
-	        	<a>
-					<div>
-						<i class="large material-icons" title="Configurações">settings</i>
-					</div>
-				</a>
-	        </li>
-				<li>
-					<a>
+	<div>
+		<nav class="lBlue nav">
+			<div class="container nav-wrapper">
+				<a href="#" class="brand-logo dBlue-txt"><img src="../imagens/s/logo.png" width="64"></a>
+
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+		      <li>
+		      	<a href="#">
+								<div class="perfil-dois" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+									<div class="valign-wrapper">
+										<img class=" circle" src="a.jpg" width="50" >
+									</div>
+									<div class="truncate">
+										Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+									</div>
+							</div>
+						</a>
+					</li>
+					<li>
+		        	<a>
 						<div>
-							<i class="large material-icons" title="Sair">power_settings_new</i>
+							<i class="large material-icons" title="Configurações">settings</i>
 						</div>
 					</a>
-	      </li>
-	    </ul>
-		</div>
-		<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position: sticky;">
-			<div class="nav-content container ">
-	      <ul class="tabs tabs-transparent">
-	        <li onclick = 'loadDoc(1)' id="1" class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
+		        </li>
+					<li>
+						<a>
+							<div>
+								<i class="large material-icons" title="Sair">power_settings_new</i>
+							</div> xzxzxzzsSSSdsdsasSSS
+						</a>
+		      </li>
+		    </ul>
+			</div>
+		</nav>
+	<div id="sub_menu" style="width: 100%">
+		<nav  class="dBlue valign-wrapper " style="height: 51px;">
+			<div class="nav-content container " style="z-index: 100;">
+		    <ul class="tabs tabs-transparent">
+		      <li onclick = 'loadDoc(1)' id="1" class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
 			    <li onclick = 'loadDoc(2)' id="2" class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
 			    <li onclick = 'loadDoc(3)' id="3" class="tab" title="Publicar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
 			    <li onclick = 'loadDoc(4)' id="4" class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
@@ -119,19 +122,16 @@
 			    <li class="right">
 				    <div class="input-field">
 				    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
-	          	<input id="search" type="search" style="width: 220px">
-	     		  </div>
+		        	<input id="search" type="search" style="width: 220px">
+		   		  </div>
 				  </li>
 		    </ul>
-	    </div>
-	  </nav>
-  </nav>
+		  </div>
+		</nav>
+	</div>
 
-  <div class="section">
-  	<div class="container" id="loader" style="min-height: 600px; background-color: #fcfcfc;">
-  		
-  	</div>
-  </div>
+	<div class="container" id="loader" style="min-height: 6005px; background-color: #fcfcfc;">
+	</div>
 
   <footer class="page-footer lBlue" >
     <div class="container">
@@ -162,18 +162,16 @@
 </body>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  	<script>
-		$(function(){
-		    var stickyHeaderTop = $('#sub_menu').offset().top;
-
-		    $(window).scroll(function(){
-		      if( $(window).scrollTop() > stickyHeaderTop ) {
-	          $('#sub_menu').css({position: 'fixed', top: '0px'});
-	          $('#sticky').css('display', 'block');
-		      } else {
-	          $('#sub_menu').css({position: 'static', top: '0px'});
-	          $('#sticky').css('display', 'none');
-		      }
-		    });
+		$(window).scroll(function(e){ 
+		  var $el = $('#sub_menu'); 
+		  var isPositionFixed = ($el.css('position') == 'fixed');
+		  if ($(this).scrollTop() > 64 && !isPositionFixed){ 
+		    $('#sub_menu').css({'position': 'fixed', 'top': '0px'}); 
+		  }
+		  if ($(this).scrollTop() < 64 && isPositionFixed)
+		  {
+		    $('#sub_menu').css({'position': 'static', 'top': '0px'}); 
+		  } 
 		});
 	</script>
 </html>
