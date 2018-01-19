@@ -8,10 +8,12 @@
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </head>
 <body>
-	<div class="lBlue">
-		<div class=" container lBlue" >
-			<h2 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Atividade recente</h2>
+	<a style="cursor: pointer;">
+		<div class="lBlue" title="Refrescar">
+			<div class=" container lBlue">
+				<h3 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt"><i class="small material-icons">refresh</i> Atividade recente</h3>
+			</div>
 		</div>
-	</div>
+	</a>
 </body>
 </html>

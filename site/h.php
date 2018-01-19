@@ -12,7 +12,7 @@
 	<div class="dBlue">
 		<div class="lBlue">
 			<div class=" container lBlue" >
-				<h2 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Shared Notes</h2>
+				<h3 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Shared Notes</h3>
 			</div>
 		</div>
 
@@ -23,6 +23,6 @@
 		</div>
 	</div>
 
-	<div class="divider container"></div>
+	<div class="divider"></div>
 </body>
 </html>

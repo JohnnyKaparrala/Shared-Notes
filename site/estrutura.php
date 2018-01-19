@@ -20,7 +20,7 @@
 
 		  var pagina;
 
-		  for(i = 1; i <= 6; i++){
+		  for(i = 1; i <= 7; i++){
 		  	if ( $("#" + i).hasClass("active") ){
 		  		$("#" + i).removeClass("active");
 		  			break;
@@ -66,7 +66,7 @@
 		  	case 7:{
 		  		pagina = "pr.php";
 		  		document.title = "Seguidores - Shared Notes";
-		  		document.getElementById("6").classList.add('active');
+		  		document.getElementById("7").classList.add('active');
 		  	}break;
 
 		  	default:{
@@ -120,12 +120,12 @@
 	<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position:absolute">
 		<div class="nav-content container ">
       <ul class="tabs tabs-transparent">
-        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
-		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
-		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
-		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
-		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
-		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
+        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a><i class="large material-icons ">home</i></a></li>
+		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
+		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a><i class="large material-icons ">note_add</i></a></li>
+		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a><i class="large material-icons ">note</i></a></li>
+		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a><i class="large material-icons ">question_answer</i></a></li>
+		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
 		    <li class="right">
 			    <div class="input-field" title="Procurar no site">
 			    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
