@@ -110,28 +110,26 @@
 			</div>
 		</nav>
 	</div>
-	<div id="sub_menu" style="width: 100%">
-		<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position: sticky;">
-			<div class="nav-content container ">
-	      <ul class="tabs tabs-transparent">
-	        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
-			    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
-			    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
-			    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
-			    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
-			    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
-			    <li class="right">
-				    <div class="input-field">
-				    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
-		        	<input id="search" type="search" style="width: 220px">
-		   		  </div>
-				  </li>
-		    </ul>
-		  </div>
-		</nav>
-	</div>
+	<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position:absolute">
+		<div class="nav-content container ">
+      <ul class="tabs tabs-transparent">
+        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a href="#"><i class="large material-icons ">home</i></a></li>
+		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a href="#"><i class="large material-icons ">notifications</i></a></li>
+		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a href="#"><i class="large material-icons ">note_add</i></a></li>
+		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a href="#"><i class="large material-icons ">note</i></a></li>
+		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a href="#"><i class="large material-icons ">question_answer</i></a></li>
+		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a href="#"><i class="large material-icons ">group</i></a></li>
+		    <li class="right">
+			    <div class="input-field">
+			    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
+	        	<input id="search" type="search" style="width: 220px">
+	   		  </div>
+			  </li>
+	    </ul>
+	  </div>
+	</nav>
 
-	<div class="container" id="loader" style="min-height: 1005px; background-color: #fcfcfc;">
+	<div class="container" id="loader" style="min-height: 1005px; background-color: #fcfcfc; margin-top: 51px">
 	</div>
 
   <footer class="page-footer lBlue" >
@@ -163,16 +161,12 @@
 </body>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  	<script>
-		$(window).scroll(function(e){ 
-		  var $el = $('#sub_menu'); 
-		  var isPositionFixed = ($el.css('position') == 'fixed');
-		  if ($(this).scrollTop() > 64 && !isPositionFixed){ 
-		    $('#sub_menu').css({'position': 'fixed', 'top': '0px'}); 
-		  }
-		  if ($(this).scrollTop() < 64 && isPositionFixed)
-		  {
-		    $('#sub_menu').css({'position': 'static', 'top': '0px'}); 
-		  } 
-		});
+		var initTopPosition= $('#sub_menu').offset().top;   
+			$(window).scroll(function(){
+			    if($(window).scrollTop() > initTopPosition)
+			        $('#sub_menu').css({'position':'fixed','top':'0px'});
+			    else
+			        $('#sub_menu').css({'position':'absolute','top':initTopPosition+'px'});
+			});
 	</script>
 </html>
