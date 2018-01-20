@@ -11,13 +11,6 @@
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
 
-		var urlParam = function(name, w){
-		    w = w || window;
-		    var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
-		        val = w.location.search.match(rx);
-		    return !val ? '':val[1];
-		}
-
 		function loadDoc(doc) {
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
@@ -26,72 +19,88 @@
 		    }
 		  };
 
-		  var pagina;
-
 		  for(i = 1; i <= 7; i++){
 		  	if ( $("#" + i).hasClass("active") ){
 		  		$("#" + i).removeClass("active");
 		  			break;
 		  	}
 		  }
-		   switch(doc){
+
+		  var m = document.cookie;
+		  if(doc == 0){
+		  	if(m == null){
+		  		doc = 1;
+		  	}else{
+		  		doc = parseInt(m);
+		  	}
+		  }
+
+		  var pagina;
+		  switch(doc){
 		  	case 1:{
 		  		pagina = "h.php";
 		  		document.title = "Home - Shared Notes";
 		  		document.getElementById("1").classList.add('active');
+		  		document.cookie = "1";
 		  	}break;
 
 		  	case 2:{
 		  		pagina = "ar.php";
 		  		document.title = "Atividades recentes - Shared Notes";
 		  		document.getElementById("2").classList.add('active');
+		  		document.cookie = "2";
 		  	}break;
 
 		  	case 3:{
 		  		pagina = "pup.php";
 		  		document.title = "Projeto novo - Shared Notes";
 		  		document.getElementById("3").classList.add('active');
+		  		document.cookie = "3";
 		  	}break;
 
 		  	case 4:{
 		  		pagina = "sp.php";
 		  		document.title = "Projetos - Shared Notes";
 		  		document.getElementById("4").classList.add('active');
+		  		document.cookie = "4";
 		  	}break;
 
 		  	case 5:{
 		  		pagina = "p.php";
 		  		document.title = "Perguntas - Shared Notes";
 		  		document.getElementById("5").classList.add('active');
+		  		document.cookie = "5";
 		  	}break;
 
 		  	case 6:{
 		  		pagina = "s.php";
 		  		document.title = "Seguidores - Shared Notes";
 		  		document.getElementById("6").classList.add('active');
+		  		document.cookie = "6";
 		  	}break;
 
 		  	case 7:{
 		  		pagina = "pr.php";
 		  		document.title = "Seguidores - Shared Notes";
 		  		document.getElementById("7").classList.add('active');
+		  		document.cookie = "7";
 		  	}break;
 
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
-		  }
+			}
 
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
 		}
 	</script>
 </head>
-<body onload="loadDoc(1)">
+<body onload="loadDoc(0)">
 	<div>
 		<nav class="lBlue nav">
 			<div class="container nav-wrapper">
-				<a href="#" class="brand-logo dBlue-txt" title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
+				<a class="brand-logo dBlue-txt" onclick = 'loadDoc(1)' title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
 
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 		      <li >
