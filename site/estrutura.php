@@ -10,6 +10,14 @@
 	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
+
+		var urlParam = function(name, w){
+		    w = w || window;
+		    var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+		        val = w.location.search.match(rx);
+		    return !val ? '':val[1];
+		}
+
 		function loadDoc(doc) {
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
@@ -80,31 +88,30 @@
 	</script>
 </head>
 <body onload="loadDoc(1)">
-
 	<div>
 		<nav class="lBlue nav">
 			<div class="container nav-wrapper">
 				<a href="#" class="brand-logo dBlue-txt" title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
 
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-		      <li>
+		      <li >
 		      	<a href="#">
-								<div class="perfil-dois" id="7" onclick = 'loadDoc(7)' title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-									<div class="valign-wrapper">
-										<img class=" circle" src="a.jpg" width="50" >
-									</div>
-									<div class="truncate">
-										Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-									</div>
+							<div class="perfil-dois" id="7" onclick = 'loadDoc(7)' title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+								<div class="valign-wrapper">
+									<img class=" circle" src="a.jpg" width="50" >
+								</div>
+								<div class="truncate">
+									Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+								</div>
 							</div>
 						</a>
 					</li>
 					<li>
 		        	<a>
-						<div>
-						<i class=" tab large material-icons" title="Configurações">settings</i>
-						</div>
-					</a>
+								<div>
+									<i class=" tab large material-icons" title="Configurações">settings</i>
+								</div>
+							</a>	
 		        </li>
 					<li>
 						<a>
