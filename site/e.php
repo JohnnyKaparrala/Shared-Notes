@@ -25,10 +25,12 @@
 		  			break;
 		  	}
 		  }
+			var body = $("html, body");
+			body.stop().animate({scrollTop:0}, 200, 'swing', function() {});
 
 		  var m = document.cookie;
 		  if(doc == 0){
-		  	if(m == null){
+		  	if(m === null || m == ""){
 		  		doc = 1;
 		  	}else{
 		  		doc = parseInt(m);
@@ -101,8 +103,7 @@
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
 			}
-			var body = $("html, body");
-			body.stop().animate({scrollTop:0}, 200, 'swing', function() {});
+
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
 		}
@@ -157,7 +158,7 @@
       <ul class="tabs tabs-transparent">
         <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a><i class="large material-icons ">home</i></a></li>
 		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
-		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a><i class="large material-icons ">note_add</i></a></li>
+		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Publicar um projeto"><a><i class="large material-icons ">note_add</i></a></li>
 		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a><i class="large material-icons ">note</i></a></li>
 		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a><i class="large material-icons ">question_answer</i></a></li>
 		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
