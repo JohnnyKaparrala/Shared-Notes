@@ -19,7 +19,7 @@
 		    }
 		  };
 
-		  for(i = 1; i <= 7; i++){
+		  for(i = 1; i <= 8; i++){
 		  	if ( $("#" + i).hasClass("active") ){
 		  		$("#" + i).removeClass("active");
 		  			break;
@@ -81,16 +81,22 @@
 
 		  	case 7:{
 		  		pagina = "pr.php";
-		  		document.title = "Seguidores - Shared Notes";
-		  		document.getElementById("7").classList.add('active');
+		  		document.title = "Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - Shared Notes";
 		  		document.cookie = "7";
+		  	}break;
+
+		  	case 8:{
+		  		pagina = "c.php";
+		  		document.title = "Configurações - Shared Notes";
+		  		document.cookie = "8";
 		  	}break;
 
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
 			}
-
+			var body = $("html, body");
+			body.stop().animate({scrollTop:0}, 200, 'swing', function() {});
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
 		}
@@ -116,7 +122,7 @@
 						</a>
 					</li>
 					<li>
-		        	<a>
+		        	<a onclick = "loadDoc(8)">
 								<div>
 									<i class=" tab large material-icons" title="Configurações">settings</i>
 								</div>
@@ -152,7 +158,7 @@
 	  </div>
 	</nav>
 
-	<div class="container" id="loader" style="min-height: 800px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
+	<div class="container" id="loader" style="min-height: 8000px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
 	</div>
 
   <footer class="page-footer lBlue" >
