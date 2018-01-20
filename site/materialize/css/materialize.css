@@ -11,6 +11,16 @@
 /*  src: url(../font/font.woff2) format('woff2');*/
 }
 
+.cont{
+  display: grid;
+  grid-template: "foto titulo"
+                  "foto descricao"
+                  "nome notas";
+  grid-template-columns: 160px auto;
+  grid-template-rows: 40px 120px 30px;
+  margin-top: 30px;
+}
+
 .fixedElement {
   background-color: #c0c0c0;
   position:fixed;
@@ -55,6 +65,10 @@
 
 .dSBlue{
   background-color: rgba(43,56,69,1) !important;
+}
+
+.dSBlue-txt{
+  color: rgba(43,56,69,1) !important;
 }
 
 .lBlue-txt{
