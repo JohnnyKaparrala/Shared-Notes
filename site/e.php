@@ -19,7 +19,7 @@
 		    }
 		  };
 
-		  for(i = 1; i <= 8; i++){
+		  for(i = 1; i <= 6; i++){
 		  	if ( $("#" + i).hasClass("active") ){
 		  		$("#" + i).removeClass("active");
 		  			break;
@@ -91,6 +91,12 @@
 		  		document.cookie = "8";
 		  	}break;
 
+		  	case 9:{
+		  		pagina = "a.php";
+		  		document.title = "Ajuda - Shared Notes";
+		  		document.cookie = "9";
+		  	}break;
+
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
@@ -115,19 +121,26 @@
 								<div class="valign-wrapper">
 									<img class=" circle" src="a.jpg" width="50" >
 								</div>
-								<div class="truncate">
+								<div class="truncate ">
 									Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 								</div>
 							</div>
 						</a>
 					</li>
 					<li>
-		        	<a onclick = "loadDoc(8)">
-								<div>
-									<i class=" tab large material-icons" title="Configurações">settings</i>
-								</div>
-							</a>	
-		        </li>
+		        <a onclick = "loadDoc(8)">
+							<div>
+								<i class=" tab large material-icons" title="Configurações">settings</i>
+							</div>
+						</a>	
+		      </li>
+					<li>
+		        <a onclick = "loadDoc(9)">
+							<div>
+								<i class=" tab large material-icons" title="Ajuda">help_outline</i>
+							</div>
+						</a>	
+		      </li>
 					<li>
 						<a>
 							<div>
@@ -158,10 +171,10 @@
 	  </div>
 	</nav>
 
-	<div class="container" id="loader" style="min-height: 8000px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
+	<div class="container" id="loader" style="min-height: 800px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
 	</div>
 
-  <footer class="page-footer lBlue" >
+  <footer class="page-footer lBlue z-depth-1" >
     <div class="container">
       <div class="row">
         <div class="col l6 s12">

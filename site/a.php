@@ -8,14 +8,10 @@
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </head>
 <body>
-	<div class="row">
-		<div class="col s1">
-
-	    </div>
-
-	    <div class="col s1">
-
-	    </div>
+	<div class="lBlue">
+		<div class=" container lBlue">
+			<h3 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Ajuda</h3>
+		</div>
 	</div>
 </body>
 </html>
