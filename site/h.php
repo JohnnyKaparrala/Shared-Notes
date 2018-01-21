@@ -45,8 +45,11 @@
 			</div>
 			<div style="grid-area: notas">
 				<div class="right" style="margin-right: 0.8em">
-					<a class="waves-effect dBlue btn">Detalhes</a>
-					<a class="waves-effect dBlue btn">Baixar</a>
+					<i class="tiny material-icons ">insert_comment</i> 2 |
+					<i class="tiny material-icons ">keyboard_arrow_up</i>6 |
+					<i class="tiny material-icons ">keyboard_arrow_down</i>1
+					<a title="Mais detalhes" class="waves-effect dBlue btn"><i class="tiny material-icons">details</i></a>
+					<a title="Fazer download" class="waves-effect dBlue btn"><i class="tiny material-icons">file_download</i></a>
 				</div>
 			</div>
 		</div>
@@ -71,7 +74,10 @@
 			</div>
 			<div style="grid-area: notas">
 				<div class="right" style="margin-right: 0.8em">
-					<a class="waves-effect dBlue btn">Visualizar pergunta</a>
+					<i class="tiny material-icons ">insert_comment</i> 3 |
+					<i class="tiny material-icons ">keyboard_arrow_up</i>4 |
+					<i class="tiny material-icons ">keyboard_arrow_down</i>0
+					<a title="Visualizar pergunta" class="waves-effect dBlue btn"><i class="small material-icons">pageview</i></a>
 				</div>
 			</div>
 		</div>
