@@ -120,7 +120,7 @@
 	<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position:absolute">
 		<div class="nav-content container ">
       <ul class="tabs tabs-transparent">
-        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a><i class="large material-icons ">home</i></a></li>
+        <li id="1" onclick = 'loadDoc(1)' class="tab" ><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am a tooltip"><i class="large material-icons ">home</i></a></li>
 		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
 		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Postar um projeto"><a><i class="large material-icons ">note_add</i></a></li>
 		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a><i class="large material-icons ">note</i></a></li>

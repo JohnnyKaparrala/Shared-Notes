@@ -11,13 +11,37 @@
 /*  src: url(../font/font.woff2) format('woff2');*/
 }
 
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  width: 76px;
+}
+
+.tipo{
+  margin-top: -1.1em;
+  width: 5em;
+  height: 1.1em;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.alinharMeio
+{
+  position: absolute;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -50%); /* relative to element's height & width */
+}
+
 .cont{
   display: grid;
-  grid-template: "foto titulo"
+  grid-template:  "tipo tipo"
+                  "foto titulo"
                   "foto descricao"
                   "nome notas";
-  grid-template-columns: 160px auto;
-  grid-template-rows: 40px 120px 30px;
+  grid-template-columns: 140px auto;
+  grid-template-rows: 0px 40px 60px 45px;
   margin-top: 30px;
 }
 

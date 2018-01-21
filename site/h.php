@@ -23,31 +23,60 @@
 		</div>
 	</div>
 
-	<div class="container cont white" style="margin-top: 25px; border: 1px solid #efefef">
-			<div style="grid-area: foto" class="center"><img src="b.jpg" class="circle" width="96" height="96"></div>
-			<div style="grid-area: titulo" class="truncate valign-wrapper center"><h5 class="light dSBlue-txt">Batatas carinhosas V6</h5></div>
-			<div style="grid-area: descricao"><p>As batatas amigas gostam de caminhar juntas e encontrar ets de varginha. Eu deveria ter usado o Lorem Ipsum.</p></div>
-			<div style="grid-area: nome" class="valign-wrapper center dSBlue-txt">Ciclano Amigo</div>
-			<div style="grid-area: notas" class="truncate">Notas de versão</div>
-	</div>
+	<div class="container">
 
+		<div class="cont white" style="margin-top: 5em; border: 1px solid #efefef">
+			<div style="grid-area: tipo;">
+				<div class="dSBlue white-text tipo center">
+					<h6 class="margin0 light">Projeto</h6>
+				</div>
+			</div>
+			<div style="grid-area: foto;">
+				<img src="a.jpg" class="circle img">
+			</div>
+			<div style="grid-area: titulo" class="truncate center">
+				<h5 class="light dSBlue-txt">Batatas carinhosas V6</h5>
+			</div>
+			<div style="grid-area: descricao; margin-top: 1.6em" class="truncate">
+				Lorem ipsum dolor sit amet, mollis blandit accusamus at est. At nullam legimus phaedrum pro, vero atomorum theophrastus vel ad, cum dolor vocibus concludaturque in. Nam novum utinam prompta id. Ex ornatus impedit cum. Possim vituperata et eum, luptatum facilisi salutatus ius in. An eum idque pericula intellegat, ea phaedrum recusabo ius, his et consul soluta audire.
+			</div>
+			<div style="grid-area: nome" class="dSBlue-txt truncate">
+				<h7 class="light dSBlue-txt">Fulano de talaaaaaaaaaaa</h7>
+			</div>
+			<div style="grid-area: notas">
+				<div class="right" style="margin-right: 0.8em">
+					<a class="waves-effect dBlue btn">Detalhes</a>
+					<a class="waves-effect dBlue btn">Baixar</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="cont white" style="margin-top: 5em; border: 1px solid #efefef">
+			<div style="grid-area: tipo;">
+				<div class="dSBlue white-text tipo center">
+					<h6 class="margin0 light">Pergunta</h6>
+				</div>
+			</div>
+			<div style="grid-area: foto;">
+				<img src="b.jpg" class="circle img">
+			</div>
+			<div style="grid-area: titulo" class="truncate center">
+				<h5 class="light dSBlue-txt">Como n sei?</h5>
+			</div>
+			<div style="grid-area: descricao; margin-top: 1.6em" class="truncate">
+				Pergunta relacionada a programação.
+			</div>
+			<div style="grid-area: nome" class="dSBlue-txt truncate">
+				<h7 class="light dSBlue-txt">Nodoya</h7>
+			</div>
+			<div style="grid-area: notas">
+				<div class="right" style="margin-right: 0.8em">
+					<a class="waves-effect dBlue btn">Visualizar pergunta</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 </body>
 </html>
-
-<!--
-	<div class="row">
-				<div class="col s3"><img src="a.jpg" width="64" class="circle"></div>
-				<div class="col">Batatas carinhosas V6</div>
-			</div>
-			<div class="row">
-				<div class="col">c</div>
-			</div>
-			<div class="row">
-				<div class="col">d</div>
-			</div>
-			<div class="row">
-				<div class="col">e</div>
-				<div class="col">f</div>
-			</div>
--->
