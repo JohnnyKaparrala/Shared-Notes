@@ -10,7 +10,7 @@
 <body>
 	<div class="lBlue">
 		<div class=" container lBlue">
-			<h3 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Seus projetos</h3>
+			<h3 class=" header center-on-small-only valign-wrapper margin0 light dBlue-txt">Projetos</h3>
 		</div>
 	</div>
 </body>

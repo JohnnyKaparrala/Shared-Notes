@@ -171,8 +171,8 @@
       <ul class="tabs tabs-transparent">
         <li id="1" onclick = 'loadDoc(1)' class="tab" ><a><i class="large material-icons ">home</i></a></li>
 		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
-		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Publicar um projeto"><a><i class="large material-icons ">note_add</i></a></li>
-		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Seus projetos"><a><i class="large material-icons ">note</i></a></li>
+		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Publicar um projeto"><a><i class="large material-icons ">create_new_folder</i></a></li>
+		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Projetos"><a><i class="large material-icons ">folder</i></a></li>
 		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a><i class="large material-icons ">question_answer</i></a></li>
 		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
 		    <li class="right">
