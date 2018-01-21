@@ -49,13 +49,13 @@
 					<div style="display: inline-block;margin-right: 1.3em; ">
 						<h5 class="light margin0" style="display: inline-block; font-size: 1.6em;vertical-align: middle">
 							<i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-							<i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> 6 |
-							<i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> 1
+							<i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+							<i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
 						</h5>
 					</div>
 					<div style="display: inline-block;">
-						<a title="Mais detalhes" class="waves-effect dBlue btn"><i class="tiny material-icons">details</i></a>
-						<a title="Baixar" class="waves-effect dBlue btn"><i class="tiny material-icons">file_download</i></a>
+						<a title="Mais detalhes" class="waves-effect btn"><i class="tiny material-icons">details</i></a>
+						<a title="Baixar" class="waves-effect btn"><i class="tiny material-icons">file_download</i></a>
 					</div>
 				</div>
 			</div>
@@ -84,12 +84,12 @@
 					<div style="display: inline-block;margin-right: 1.3em; ">
 						<h5 class="light margin0" style="display: inline-block; font-size: 1.6em;vertical-align: middle">
 							<i class="material-icons" style="font-size: 0.8em">insert_comment</i> 3 |
-							<i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i > 4 |
-							<i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> 0
+							<i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i > <span style="color: #2BBB80">4</span> |
+							<i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">0</span>
 						</h5>
 					</div>
 					<div style="display: inline-block;">
-						<a title="Visualizar pergunta" class="waves-effect dBlue btn"><i class="small material-icons">pageview</i></a>
+						<a title="Visualizar pergunta" class="waves-effect btn"><i class="small material-icons">pageview</i></a>
 					</div>
 				</div>
 			</div>

@@ -194,7 +194,7 @@
         <div class="col l6 s12">
           <h4 class="white-text header col s12 light">Junte-se a discussão</h4>
           <p class="grey-text text-lighten-4">Você pode nos contatar diretamente pelo nosso chat do **.</p>
-          <a class="waves-effect dSBlue btn" >Chat</a>
+          <a class="waves-effect btn" >Chat</a>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Siga-nos</h5>
