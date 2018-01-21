@@ -7,11 +7,12 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="materialize/css/meu.css">
 	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
 
-		function loadDoc(doc) {
+		function loadDoc(doc) { 
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200) {
@@ -82,7 +83,7 @@
 		  	}break;
 
 		  	case 7:{
-		  		pagina = "pr.php";
+		  		pagina = "pr.php?p=FulanoDeTal";
 		  		document.title = "Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - Shared Notes";
 		  		document.cookie = "7";
 		  	}break;
@@ -106,6 +107,18 @@
 
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
+		}
+
+		function loadDocPar(doc,par){
+
+
+			switch(doc){
+				case 1:{
+		  		pagina = "pr.php?p=" + par;
+		  		document.title = par + " - Shared Notes";
+		  		document.cookie = "10_" + par; 
+		  	}
+	  	}
 		}
 	</script>
 </head>

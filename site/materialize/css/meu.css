@@ -1,0 +1,77 @@
+
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  width: 76px;
+}
+
+.tipo{
+  margin-top: -1.1em;
+  width: 5em;
+  height: 1.1em;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.alinharMeio
+{
+  position: absolute;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -50%); /* relative to element's height & width */
+}
+
+.cont{
+  display: grid;
+  grid-template:  "tipo tipo"
+                  "foto titulo"
+                  "foto descricao"
+                  "nome notas";
+  grid-template-columns: 140px auto;
+  grid-template-rows: 0px 40px 60px 45px;
+  margin-top: 30px;
+}
+
+.fixedElement {
+  background-color: #c0c0c0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+}
+
+.margin0{
+  margin:0;
+}
+
+.perfil-dois{
+  width: 250px; 
+  grid-template-columns: 60px 190px;
+  display: grid;
+}
+
+
+.dBlue-txt{
+  color: #303e4d !important;
+}
+
+.dBlue{
+  background-color: #303e4d !important;
+}
+
+.dSBlue{
+  background-color: rgba(43,56,69,1) !important;
+}
+
+.dSBlue-txt{
+  color: rgba(43,56,69,1) !important;
+}
+
+.lBlue-txt{
+  color: #5d7ba0 !important;
+}
+
+.lBlue{
+  background-color:#5d7ba0 !important;
+}
