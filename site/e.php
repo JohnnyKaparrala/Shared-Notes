@@ -4,15 +4,16 @@
 	<link rel="shortcut icon" href="../imagens/s/logo.ico" />
 	<meta charset="utf-8">
 	<title>Home - Shared Notes</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="materialize/css/Material+Icons.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/meu.css">
+	<script src="materialize/jquery-3.3.1.js" type="text/javascript"></script>
 	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
 
-		function loadDoc(doc) { 
+		function loadDoc(doc,par) { 
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200) {
@@ -62,7 +63,7 @@
 		  	}break;
 
 		  	case 4:{
-		  		pagina = "sp.php";
+		  		pagina = "pp.php";
 		  		document.title = "Projetos - Shared Notes";
 		  		document.getElementById("4").classList.add('active');
 		  		document.cookie = "4";
@@ -83,7 +84,7 @@
 		  	}break;
 
 		  	case 7:{
-		  		pagina = "pr.php?p=FulanoDeTal";
+		  		pagina = "pr.php?p=" + par;
 		  		document.title = "Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - Shared Notes";
 		  		document.cookie = "7";
 		  	}break;
@@ -100,6 +101,13 @@
 		  		document.cookie = "9";
 		  	}break;
 
+		  	case 10:{
+		  		pagina = "pro.php?p=" + par;
+		  		console.log(pagina);
+		  		document.title = "Batatas Carinhosas(1.6) - Shared Notes";
+		  		document.cookie = "10";
+		  	}break;
+
 		  	default:{
 		  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
 		  	}
@@ -107,18 +115,6 @@
 
 		  xhttp.open("GET", pagina, true);
 		  xhttp.send();
-		}
-
-		function loadDocPar(doc,par){
-
-
-			switch(doc){
-				case 1:{
-		  		pagina = "pr.php?p=" + par;
-		  		document.title = par + " - Shared Notes";
-		  		document.cookie = "10_" + par; 
-		  	}
-	  	}
 		}
 	</script>
 </head>
@@ -131,7 +127,7 @@
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 		      <li >
 		      	<a href="#">
-							<div class="perfil-dois" id="7" onclick = 'loadDoc(7)' title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+							<div class="perfil-dois" id="7" onclick = 'loadDoc(7, "FulanoDeTal")' title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
 								<div class="valign-wrapper">
 									<img class=" circle" src="a.jpg" width="50" >
 								</div>
@@ -166,15 +162,15 @@
 			</div>
 		</nav>
 	</div>
-	<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 51px; position:absolute; z-index: 100000">
+	<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 49px; position:absolute; z-index: 100000">
 		<div class="nav-content container ">
       <ul class="tabs tabs-transparent">
-        <li id="1" onclick = 'loadDoc(1)' class="tab" ><a><i class="large material-icons ">home</i></a></li>
+        <li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a><i class="large material-icons ">home</i></a></li>
 		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
+		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
 		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Publicar um projeto"><a><i class="large material-icons ">create_new_folder</i></a></li>
 		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Projetos"><a><i class="large material-icons ">folder</i></a></li>
 		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Perguntas"><a><i class="large material-icons ">question_answer</i></a></li>
-		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
 		    <li class="right">
 			    <div class="input-field" title="Procurar no site">
 			    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
@@ -215,7 +211,6 @@
     </div>
   </footer>
 </body>
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  	<script>
 		var initTopPosition= $('#sub_menu').offset().top;   
 			$(window).scroll(function(){

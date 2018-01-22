@@ -7,6 +7,14 @@
   width: 76px;
 }
 
+.margin_75em{
+  margin: .75em;
+}
+
+.margin1em{
+  margin: 1em;
+}
+
 .tipo{
   margin-top: -1.1em;
   width: 5em;
@@ -33,6 +41,13 @@
   margin-top: 30px;
 }
 
+.docPerfil{
+  display: grid;
+  grid-template:  "infoUm infoDois";
+  grid-template-columns: auto 20em;
+  margin-top: 1em;
+}
+
 .fixedElement {
   background-color: #c0c0c0;
   position:fixed;
@@ -43,6 +58,10 @@
 
 .margin0{
   margin:0;
+}
+
+.pad0{
+  padding: 0 !important;
 }
 
 .perfil-dois{
@@ -74,4 +93,8 @@
 
 .lBlue{
   background-color:#5d7ba0 !important;
+}
+
+.cinza{
+  background-color: rgba(245,245,245,1)
 }

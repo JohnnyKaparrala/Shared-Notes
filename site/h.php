@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="materialize/css/Material+Icons.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/meu.css">
@@ -54,8 +54,8 @@
 						</h5>
 					</div>
 					<div style="display: inline-block;">
-						<a title="Mais detalhes" class="waves-effect btn"><i class="tiny material-icons">details</i></a>
-						<a title="Baixar" class="waves-effect btn"><i class="tiny material-icons">file_download</i></a>
+						<a title="Mais detalhes" href="pr.php" class="waves-effect waves-light btn"><i class="tiny material-icons">details</i></a>
+						<a title="Baixar" class="waves-effect waves-light btn"><i class="tiny material-icons">file_download</i></a>
 					</div>
 				</div>
 			</div>
