@@ -1,14 +1,14 @@
 <html>
 <head>
-	<meta charset="utf-8">
-	<link href="materialize/css/Material+Icons.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
-	<script type="text/javascript" src="materialize/js/materialize.js"></script>
-	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<title>Batatas Carinhosas(1.6)- Shared Notes</title>
 </head>
 <body>
-	 <div class="docPerfil">
+	<?php
+		include 'include/heads.inc.php';
+	?>
+
+	<div class="container" id="loader" style="min-height: 800px; background-color: #fcfcfc; margin-top: 61px;margin-bottom: 10px">
+		<div class="docPerfil">
       <div class="container" style="grid-area: infoUm;display: grid;">
       	<div class="section">
       		<h4 class="light flow-text dSBlue-txt">Batatas Carinhosas(1.6)</h4>
@@ -58,14 +58,10 @@
       	</div>
       </div>
     </div>
+</div>
+<?php
+	include 'include/footer.inc.php';
+?>
 </body>
-<script type="text/javascript">
-	var initTopPosition= $('#infoDois').offset().top;   
-		$(window).scroll(function(){
-		    if($(window).scrollTop() > initTopPosition)
-		        $('#infoDois').css({'position':'fixed','top':'0px'});
-		    else
-		        $('#infoDois').css({'position':'absolute','top':initTopPosition+'px'});
-		});
-</script>
+	 
 </html>
