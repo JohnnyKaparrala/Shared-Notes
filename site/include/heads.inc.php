@@ -1,7 +1,26 @@
+<ul id="slide-out" class="side-nav">
+  <li><div class="user-view">
+    <div class="background">
+
+    </div>
+    
+  </div></li>
+  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+  <li><a href="#!">Second Link</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Subheader</a></li>
+  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+</ul>
+
+
 <div>
 	<nav class="lBlue nav">
 		<div class="container nav-wrapper">
-			<a class="brand-logo dBlue-txt" onclick = 'loadDoc(1)' title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
+			<div>
+				<ul class="brand-logo dBlue-txt">
+					<img src="../imagens/s/logo.png" width="64" class="hide-on-med-and-down">
+					<a data-activates="slide-out" title="Menu" class="show-on-medium-and-down"><i class="large material-icons" style="font-size: 2.7em;">menu</i></a>
+				</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 	      <li >
 	      	<a href="../pr.php?p=1">
@@ -42,7 +61,7 @@
 </div>
 
 <nav id="sub_menu" class="dBlue valign-wrapper" style="height: 49px; position:absolute; z-index: 100000">
-	<div class="nav-content container ">
+	<div class="nav-content container" >
     <ul class="tabs tabs-transparent">
     	<?php
     		$pag = $_SERVER['REQUEST_URI'];
@@ -58,7 +77,7 @@
 		    <li id="li6" class="tab hide-on-med-and-down" title="Perguntas"><a id="a6" onclick="parJs(6)"><i class="large material-icons ">question_answer</i></a></li>
 		   	<?php
 		   	}else{
-		   		?>
+		   	?>
 		   	<li id="li1" onclick = 'loadDoc(1)' class="tab" title="Home"><a id="a1"><i class="large material-icons ">home</i></a></li>
 		    <li id="li2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a id="a2"><i class="large material-icons ">notifications</i></a></li>
 		    <li id="li3" onclick = 'loadDoc(3)' class="tab" title="Seguidores"><a id="a3"><i class="large material-icons ">group</i></a></li>
@@ -198,4 +217,6 @@
 		document.cookie = tab;
 		window.location.href = "e.php";
 	}
+
+	$(".button-collapse").sideNav('show');
 </script>

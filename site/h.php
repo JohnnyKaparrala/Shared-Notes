@@ -26,7 +26,7 @@
 
 	<div class="container">
 
-		<div class="cont white" style="margin:7em 0; border: 1px solid #efefef; min-height: 147px;">
+		<div class="cont white" style="margin:7em 0; border: 1px solid #efefef;">
 			<div style="grid-area: tipo;">
 				<div class="dSBlue white-text tipo center">
 					<h6 class="margin0 light">Projeto</h6>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 
-		<div class="cont white" style="margin: 7em 0; border: 1px solid #efefef; min-height: 147px;">
+		<div class="cont white" style="margin: 7em 0; border: 1px solid #efefef;">
 			<div style="grid-area: tipo;">
 				<div class="dSBlue white-text tipo center">
 					<h6 class="margin0 light">Pergunta</h6>
