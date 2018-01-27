@@ -1,8 +1,11 @@
 <html>
 <head>
 	<title>Batatas Carinhosas(1.6)- Shared Notes</title>
+  <?php 
+    include 'include/head.inc.php';
+  ?>
 </head>
-<body>
+<body onload="onload()">
 	<?php
 		include 'include/heads.inc.php';
 	?>

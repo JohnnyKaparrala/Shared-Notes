@@ -3182,7 +3182,7 @@ if (Vel) {
         delay = 0;
       }
 
-      // Fade out ripple after delay
+      // Fade out ripple after delay//////////////////////////
     /*  setTimeout(function () {
         var style = {
           'top': relativeY + 'px',

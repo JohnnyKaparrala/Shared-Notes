@@ -1,19 +1,7 @@
-<head>	
-	<link href="materialize/css/Material+Icons.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
-	<link rel="stylesheet" type="text/css" href="materialize/css/meu.css">
-	<link rel="shortcut icon" href="../../imagens/s/logo.ico" />
-	<meta charset="utf-8">
-	<script src="materialize/jquery-3.3.1.js" type="text/javascript"></script>
-	<script type="text/javascript" src="materialize/js/materialize.js"></script>
-	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-</head>
 <div>
 	<nav class="lBlue nav">
 		<div class="container nav-wrapper">
 			<a class="brand-logo dBlue-txt" onclick = 'loadDoc(1)' title="Shared Notes"><img src="../imagens/s/logo.png" width="64"></a>
-
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 	      <li >
 	      	<a href="../pr.php?p=1">
@@ -62,28 +50,28 @@
 
     		if (strpos($arq, 'e.php') === false) {
     		?>
-	      <li id="1" class="tab" title="Home"><a onclick="parJs(1)"><i class="large material-icons ">home</i></a></li>
-		    <li id="2" class="tab" title="Atividade recente"><a onclick="parJs(2)"><i class="large material-icons ">notifications</i></a></li>
-		    <li id="6" class="tab" title="Seguidores"><a onclick="parJs(3)"><i class="large material-icons ">group</i></a></li>
-		    <li id="3" class="tab" title="Publicar um projeto"><a onclick="parJs(4)"><i class="large material-icons ">create_new_folder</i></a></li>
-		    <li id="4" class="tab" title="Projetos"><a onclick="parJs(5)"><i class="large material-icons ">folder</i></a></li>
-		    <li id="5" class="tab" title="Perguntas"><a onclick="parJs(6)"><i class="large material-icons ">question_answer</i></a></li>
+	      <li id="li1" class="tab" title="Home"><a id="a1" onclick="parJs(1)"><i class="large material-icons ">home</i></a></li>
+		    <li id="li2" class="tab" title="Atividade recente"><a id="a2" onclick="parJs(2)"><i class="large material-icons ">notifications</i></a></li>
+		    <li id="li3" class="tab" title="Seguidores"><a id="a3" onclick="parJs(3)"><i class="large material-icons ">group</i></a></li>
+		    <li id="li4" class="tab hide-on-med-and-down" title="Publicar um projeto"><a id="a4" onclick="parJs(4)"><i class="large material-icons ">create_new_folder</i></a></li>
+		    <li id="li5" class="tab hide-on-med-and-down" title="Projetos"><a id="a5" onclick="parJs(5)"><i class="large material-icons ">folder</i></a></li>
+		    <li id="li6" class="tab hide-on-med-and-down" title="Perguntas"><a id="a6" onclick="parJs(6)"><i class="large material-icons ">question_answer</i></a></li>
 		   	<?php
 		   	}else{
 		   		?>
-		   	<li id="1" onclick = 'loadDoc(1)' class="tab" title="Home"><a><i class="large material-icons ">home</i></a></li>
-		    <li id="2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a><i class="large material-icons ">notifications</i></a></li>
-		    <li id="3" onclick = 'loadDoc(3)' class="tab" title="Seguidores"><a><i class="large material-icons ">group</i></a></li>
-		    <li id="4" onclick = 'loadDoc(4)' class="tab" title="Publicar um projeto"><a><i class="large material-icons ">create_new_folder</i></a></li>
-		    <li id="5" onclick = 'loadDoc(5)' class="tab" title="Projetos"><a><i class="large material-icons ">folder</i></a></li>
-		    <li id="6" onclick = 'loadDoc(6)' class="tab" title="Perguntas"><a><i class="large material-icons ">question_answer</i></a></li>
+		   	<li id="li1" onclick = 'loadDoc(1)' class="tab" title="Home"><a id="a1"><i class="large material-icons ">home</i></a></li>
+		    <li id="li2" onclick = 'loadDoc(2)' class="tab" title="Atividade recente"><a id="a2"><i class="large material-icons ">notifications</i></a></li>
+		    <li id="li3" onclick = 'loadDoc(3)' class="tab" title="Seguidores"><a id="a3"><i class="large material-icons ">group</i></a></li>
+		    <li id="li4" onclick = 'loadDoc(4)' class="tab hide-on-med-and-down" title="Publicar um projeto"><a id="a4"><i class="large material-icons ">create_new_folder</i></a></li>
+		    <li id="li5" onclick = 'loadDoc(5)' class="tab hide-on-med-and-down" title="Projetos"><a id="a5"><i class="large material-icons ">folder</i></a></li>
+		    <li id="li6" onclick = 'loadDoc(6)' class="tab hide-on-med-and-down" title="Perguntas"><a id="a6"><i class="large material-icons ">question_answer</i></a></li>
 		   		<?php
 		   	}
 	    ?>
 	    <li class="right">
 		    <div class="input-field" title="Procurar no site">
 		    	<label class="label-icon" style="margin-top: -14px"><i class="material-icons">search</i></label>
-        	<input id="search" type="search" style="width: 220px">
+        	<input id="search" type="search" style="width: 15em">
    		  </div>
 		  </li>
     </ul>
@@ -101,7 +89,23 @@
 </script>
 
 <script type="text/javascript">
-	function loadDoc(doc) { 
+
+	function onload(){
+		setTimeout(function(){
+			$("li.indicator").css("display","none");
+
+		 	for(i = 1; i <= 6; i++){
+		  	if ( $("#a" + i).hasClass("active") ){
+		  		$("#a" + i).removeClass("active");
+		  			break;
+		  	}
+		  }
+
+			pag = window.location.href;
+		},1);
+	}
+
+	function loadDoc(doc) {
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
@@ -110,11 +114,13 @@
 	  };
 
 	  for(i = 1; i <= 6; i++){
-	  	if ( $("#" + i).hasClass("active") ){
-	  		$("#" + i).removeClass("active");
+	  	if ( $("#li" + i).hasClass("active") ){
+	  		$("#li" + i).removeClass("active");
 	  			break;
 	  	}
 	  }
+
+
 		var body = $("html, body");
 		body.stop().animate({scrollTop:0}, 200, 'swing', function() {});
 
@@ -134,42 +140,48 @@
 	  	case 1:{
 	  		pagina = "h.php";
 	  		document.title = "Home - Shared Notes";
-	  		document.getElementById("1").classList.add('active');
+	  		document.getElementById("a1").classList.add('active');
+	  		document.getElementById("li1").classList.add('active');
 	  		document.cookie = "1";
 	  	}break;
 
 	  	case 2:{
 	  		pagina = "ar.php";
 	  		document.title = "Atividades recentes - Shared Notes";
-	  		document.getElementById("2").classList.add('active');
+	  		document.getElementById("a2").classList.add('active');
+	  		document.getElementById("li2").classList.add('active');
 	  		document.cookie = "2";
 	  	}break;
 
 	  	case 3:{
 	  		pagina = "s.php";
 	  		document.title = "Seguidores - Shared Notes";
-	  		document.getElementById("3").classList.add('active');
+	  		document.getElementById("a3").classList.add('active');
+	  		document.getElementById("li3").classList.add('active');
 	  		document.cookie = "3";
 	  	}break;
 
 	  	case 4:{
 	  		pagina = "pup.php";
 	  		document.title = "Projeto novo - Shared Notes";
-	  		document.getElementById("4").classList.add('active');
+	  		document.getElementById("a4").classList.add('active');
+	  		document.getElementById("li4").classList.add('active');
 	  		document.cookie = "4";
 	  	}break;
 
 	  	case 5:{
 	  		pagina = "pp.php";
 	  		document.title = "Projetos - Shared Notes";
-	  		document.getElementById("5").classList.add('active');
+	  		document.getElementById("a5").classList.add('active');
+	  		document.getElementById("li5").classList.add('active');
 	  		document.cookie = "5";
 	  	}break;
 
 	  	case 6:{
 	  		pagina = "p.php";
 	  		document.title = "Perguntas - Shared Notes";
-	  		document.getElementById("6").classList.add('active');
+	  		document.getElementById("a6").classList.add('active');
+	  		document.getElementById("li6").classList.add('active');
 	  		document.cookie = "6";
 	  	}break;
 

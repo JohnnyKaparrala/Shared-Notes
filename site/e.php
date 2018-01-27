@@ -1,6 +1,9 @@
 <html>
 <head>
 	<title>Home - Shared Notes</title>
+	<?php 
+		include 'include/head.inc.php';
+	?>
 </head>
 <body onload="loadDoc(0)">
 	<?php
