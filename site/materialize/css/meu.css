@@ -1,3 +1,9 @@
+
+
+.pointer{
+  cursor: pointer
+}
+
 .referenciaPerfil{
   display: grid;
   grid-template:  "foto"

@@ -1,17 +1,40 @@
-<ul id="slide-out" class="side-nav">
-  <li><div class="user-view">
-    <div class="background">
+<ul id="slide-out" class="side-nav hide-on-large-only">
+	<li>
+  	<a href="../site/perf.php?p=1">
+			<div class="perfil-dois" id="7" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+				<div class="valign-wrapper">
+					<img class=" circle" src="a.jpg" width="46" >
+				</div>
+				<div class="truncate ">
+					Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				</div>
+			</div>
+		</a>
+	</li>
+	<li><div class="divider"></div></li>
+	<?php
+	$pag = $_SERVER['REQUEST_URI'];
+	$arq = end(explode("/", $pag));
 
-    </div>
-    
-  </div></li>
-  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-  <li><a href="#!">Second Link</a></li>
-  <li><div class="divider"></div></li>
-  <li><a class="subheader">Subheader</a></li>
-  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+	if (strpos($arq, 'e.php') === false) {
+	?>
+  <li class="pointer"><a onclick="parJs(4)"><i class="tab small material-icons ">create_new_folder</i> <span>Publicar um projeto</span></a></li>
+  <li class="pointer"><a onclick="parJs(5)"><i class="tab small material-icons ">folder</i><span>Projetos</span></a></li>
+  <li class="pointer"><a onclick="parJs(6)"><i class="tab small material-icons ">question_answer</i><span>Perguntas</span></a></li>
+	<?php
+ 	}else{
+ 	?>
+  <li class="pointer" onclick = 'loadDoc(4)'><a> <i class="tab small material-icons ">create_new_folder</i> <span>Publicar um projeto</span></a></li>
+  <li class="pointer" onclick = 'loadDoc(5)'><a> <i class="tab small material-icons ">folder</i> <span>Projetos</span></a></li>
+  <li class="pointer" onclick = 'loadDoc(6)'><a> <i class="tab small material-icons ">question_answer</i> <span>Perguntas</span></a></li>
+  <?php
+	 	}
+	?>
+	<li><div class="divider"></div></li>
+	<li><a href="conf.php"><i class=" tab small material-icons" title="Configurações">settings</i><span>Configurações</span></a>	</li>
+	<li><a href="ajuda.php"><i class=" tab small material-icons" title="Ajuda">help_outline</i><span>Ajuda</span></a>	</li>
+	<li><a href="sair.php"><i class="tab small material-icons" title="Sair">power_settings_new</i><span>Sair</span></a></li>
 </ul>
-
 
 <div>
 	<nav class="lBlue nav">
@@ -19,43 +42,18 @@
 			<div>
 				<ul class="brand-logo dBlue-txt">
 					<img src="../imagens/s/logo.png" width="64" class="hide-on-med-and-down">
-					<a data-activates="slide-out" title="Menu" class="show-on-medium-and-down"><i class="large material-icons" style="font-size: 2.7em;">menu</i></a>
+					<a href="#" data-activates="slide-out" title="Menu" class="button-collapse show-on-medium-and-down"><i class="large material-icons" style="font-size: 2.7em;">menu</i></a>
 				</ul>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-	      <li >
-	      	<a href="../pr.php?p=1">
-						<div class="perfil-dois" id="7" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-							<div class="valign-wrapper">
-								<img class=" circle" src="a.jpg" width="50" >
-							</div>
-							<div class="truncate ">
-								Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-	        <a href="c.php">
-						<div>
-							<i class=" tab large material-icons" title="Configurações">settings</i>
-						</div>
-					</a>	
-	      </li>
-				<li>
-	        <a href="a.php">
-						<div>
-							<i class=" tab large material-icons" title="Ajuda">help_outline</i>
-						</div>
-					</a>	
-	      </li>
-				<li>
-					<a href="sair.php">
-						<div>
-							<i class="tab large material-icons" title="Sair">power_settings_new</i>
-						</div>
-					</a>
-	      </li>
-	    </ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+		      <li>
+		      	<a href="../site/perf.php?p=1"><div class="perfil-dois" id="7" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"><div class="valign-wrapper"><img class=" circle" src="a.jpg" width="50" ></div>
+						<div class="truncate ">Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div></div></a>
+					</li>
+					<li><a href="conf.php"><div><i class=" tab large material-icons" title="Configurações">settings</i></div></a>	</li>
+					<li><a href="ajuda.php"><div><i class=" tab large material-icons" title="Ajuda">help_outline</i></div></a></li>
+					<li><a href="sair.php"><div><i class="tab large material-icons" title="Sair">power_settings_new</i></div></a></li>
+		  	</ul>
+			</div>
 		</div>
 	</nav>
 </div>
@@ -157,7 +155,7 @@
 	  var pagina;
 	  switch(doc){
 	  	case 1:{
-	  		pagina = "h.php";
+	  		pagina = "home.php";
 	  		document.title = "Home - Shared Notes";
 	  		document.getElementById("a1").classList.add('active');
 	  		document.getElementById("li1").classList.add('active');
@@ -165,7 +163,7 @@
 	  	}break;
 
 	  	case 2:{
-	  		pagina = "ar.php";
+	  		pagina = "atirec.php";
 	  		document.title = "Atividades recentes - Shared Notes";
 	  		document.getElementById("a2").classList.add('active');
 	  		document.getElementById("li2").classList.add('active');
@@ -173,7 +171,7 @@
 	  	}break;
 
 	  	case 3:{
-	  		pagina = "s.php";
+	  		pagina = "seg.php";
 	  		document.title = "Seguidores - Shared Notes";
 	  		document.getElementById("a3").classList.add('active');
 	  		document.getElementById("li3").classList.add('active');
@@ -189,7 +187,7 @@
 	  	}break;
 
 	  	case 5:{
-	  		pagina = "pp.php";
+	  		pagina = "projaba.php";
 	  		document.title = "Projetos - Shared Notes";
 	  		document.getElementById("a5").classList.add('active');
 	  		document.getElementById("li5").classList.add('active');
@@ -197,7 +195,7 @@
 	  	}break;
 
 	  	case 6:{
-	  		pagina = "p.php";
+	  		pagina = "pergaba.php";
 	  		document.title = "Perguntas - Shared Notes";
 	  		document.getElementById("a6").classList.add('active');
 	  		document.getElementById("li6").classList.add('active');
@@ -223,5 +221,9 @@
 		Materialize.toast('Adicionado aos downloads!', 4000);
 	});
 
-	$(".button-collapse").sideNav('show');
+	$(".button-collapse").sideNav();
+
+	if($( window ).width() >= 992){
+		$('.button-collapse').sideNav('hide');
+	};
 </script>

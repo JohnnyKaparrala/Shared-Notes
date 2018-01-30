@@ -42,7 +42,7 @@
 				Lorem ipsum dolor sit amet, mollis blandit accusamus at est. At nullam legimus phaedrum pro, vero atomorum theophrastus vel ad, cum dolor vocibus concludaturque in. Nam novum utinam prompta id. Ex ornatus impedit cum. Possim vituperata et eum, luptatum facilisi salutatus ius in. An eum idque pericula intellegat, ea phaedrum recusabo ius, his et consul soluta audire.
 			</div>
 			<div style="grid-area: nome;text-align: center;line-height: 45px" class="dSBlue-txt truncate">
-				<a title="Fulano de talaaaaaaaaaaaaaaaaaaaaaaa" href="pr.php?p=1"><h7 class="light dSBlue-txt">Fulano de talaaaaaaaaaaa</h7></a>
+				<a title="Fulano de talaaaaaaaaaaaaaaaaaaaaaaa" href="perf.php?p=1"><h7 class="light dSBlue-txt">Fulano de talaaaaaaaaaaa</h7></a>
 			</div>
 			<div style="grid-area: notas; line-height: 45px">
 				<div class="right" style="margin-right: 1.8em;">
@@ -54,7 +54,7 @@
 						</h5>
 					</div>
 					<div style="display: inline-block;">
-						<a title="Mais detalhes" href="pro.php?p=1" class="waves-effect waves-light btn"><i class="tiny material-icons">details</i></a>
+						<a title="Mais detalhes" href="projpag.php?p=1" class="waves-effect waves-light btn"><i class="tiny material-icons">details</i></a>
 						<a title="Baixar" class="waves-effect waves-light btn dl"><i class="tiny material-icons">file_download</i></a>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 						</h5>
 					</div>
 					<div style="display: inline-block;">
-						<a title="Visualizar pergunta" class="waves-effect waves-light btn"><i class="small material-icons">pageview</i></a>
+						<a href="pergpag.php?p=1" title="Visualizar pergunta" class="waves-effect waves-light btn"><i class="small material-icons">pageview</i></a>
 					</div>
 				</div>
 			</div>
