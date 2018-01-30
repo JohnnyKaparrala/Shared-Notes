@@ -60,7 +60,7 @@
 	</nav>
 </div>
 
-<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 49px; position:absolute; z-index: 100000">
+<nav id="sub_menu" class="dBlue valign-wrapper" style="height: 49px; position:absolute; z-index: 30">
 	<div class="nav-content container" >
     <ul class="tabs tabs-transparent">
     	<?php
@@ -121,7 +121,7 @@
 		  }
 
 			pag = window.location.href;
-		},1);
+		},90);
 	}
 
 	function loadDoc(doc) {
@@ -217,6 +217,11 @@
 		document.cookie = tab;
 		window.location.href = "e.php";
 	}
+
+	$(document).on('click', "a.dl", function() {
+		console.log('ab');
+		Materialize.toast('Adicionado aos downloads!', 4000);
+	});
 
 	$(".button-collapse").sideNav('show');
 </script>

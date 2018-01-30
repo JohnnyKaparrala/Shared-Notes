@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div style="grid-area: foto;">
-				<img src="a.jpg" class="circle img">
+				<img src="c.jpg" class="circle img">
 			</div>
 			<div style="grid-area: titulo" class="truncate center">
 				<h5 class="light dSBlue-txt">Batatas carinhosas (1.6)</h5>
@@ -55,7 +55,7 @@
 					</div>
 					<div style="display: inline-block;">
 						<a title="Mais detalhes" href="pro.php?p=1" class="waves-effect waves-light btn"><i class="tiny material-icons">details</i></a>
-						<a title="Baixar" class="waves-effect waves-light btn"><i class="tiny material-icons">file_download</i></a>
+						<a title="Baixar" class="waves-effect waves-light btn dl"><i class="tiny material-icons">file_download</i></a>
 					</div>
 				</div>
 			</div>

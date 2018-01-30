@@ -40,23 +40,34 @@
       		<div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
 		      	
       			<!-- projeto menor-->
-
 	      	</div>
       	</div>
       </div>
-      <div class="" style="grid-area: infoDois;display: grid;">
-      	<div id="infoDois" style=" position: fixed">
-      		<div class="section">
+      <div id="gridInfo2" style="grid-area: infoDois;display: grid;">
+      	<div id="infoDois" class="">
+      		<div class="section center">
       			<img src="c.jpg" width="220px">
       		</div>
-      		<div class="section">
-      			
+      		<div class="section center">
+      			<a title="Baixar" class="waves-effect waves-light btn dl"><span class="valign-wrapper">BAIXAR <i class="tiny material-icons">file_download</i></span></a>
       		</div>
-      		<div class="section">
-      			
+      		<div class="section ">
+      			<span>Publicado por</span>
+            <div class="ReferenciaPerfil white center" style=" display: block; margin: 0 auto">
+              <a href="pr.php?p=fulano_de_talaaaaaaa">
+                <div style="grid-area: foto;">
+                  <img src="a.jpg" width="80" class=" circle">
+                </div>
+                <div style="grid-area: nome;">
+                  <span class="truncate light dBlue-txt"> Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaa</span>
+                </div>
+              </a>
+            </div>
+            
       		</div>
-      		<div class="section">
-      			
+      		<div class="section ">
+      			Em
+            <div class="cinza center container" style="padding: 0.5em">30/01/2018</div>
       		</div>
       	</div>
       </div>
@@ -66,5 +77,4 @@
 	include 'include/footer.inc.php';
 ?>
 </body>
-	 
 </html>
