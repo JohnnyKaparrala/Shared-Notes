@@ -1,5 +1,15 @@
 
 
+.referenciaProjeto{
+  display: grid;
+  grid-template:  "foto nome"
+                  "foto avaliacao";
+  grid-template-rows: 35px 40px;
+  grid-template-columns: 80px auto;
+  margin: 0.7em 0;
+  background-color: white;
+}
+
 .pointer{
   cursor: pointer
 }

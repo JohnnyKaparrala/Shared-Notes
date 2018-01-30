@@ -37,11 +37,88 @@
       	</div>
       	<div class="section">
       		<h6 class="dSBlue-txt" style="margin-left: 1em">Outras versões:</h6>
-      		<div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-		      	<div class="referenciaProjeto">
-                 <div>
-                   
-                 </div>
+      		<div class="flow-text cinza" style="font-size: 1.1em;padding:1em;overflow-y: scroll;height: 10em">
+            <div class="container">
+
+  		      	<div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.5)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+              <div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.4)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+              <div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.3)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+              <div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.2)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+              <div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.1)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+              <div class="referenciaProjeto">
+               <div style="grid-area: nome">
+                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.0)</span>
+               </div>
+               <div style="grid-area: foto">
+                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+               </div>
+               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+               </div>
+              </div>
+
             </div>
 	      	</div>
       	</div>
@@ -67,7 +144,7 @@
           </div>
       		<div class="section ">
       			<span style="margin-left: 16px">Publicado por</span>
-            <div class="ReferenciaPerfil white center" style=" display: block; margin: 0 auto">
+            <div class="ReferenciaPerfil white center" style=" display: block; margin: 0 auto;">
               <a href="pr.php?p=fulano_de_talaaaaaaa">
                 <div style="grid-area: foto;">
                   <img src="a.jpg" width="80" class=" circle">

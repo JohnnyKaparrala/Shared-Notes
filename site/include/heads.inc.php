@@ -203,11 +203,12 @@
 	  	}break;
 
 	  	default:{
-	  		pagina = "Erro 69. Essa página não existe. <b>:(</b>";
+	  		pagina = "Erro 1. Essa página não existe. <b>:(</b>";
 	  	}
 		}
 
 	  xhttp.open("GET", pagina, true);
+
 	  xhttp.send();
 	}
 
