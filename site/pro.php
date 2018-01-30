@@ -38,10 +38,19 @@
       	<div class="section">
       		<h6 class="dSBlue-txt" style="margin-left: 1em">Outras versões:</h6>
       		<div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-		      	
-      			<!-- projeto menor-->
+		      	<div class="referenciaProjeto">
+                 <div>
+                   
+                 </div>
+            </div>
 	      	</div>
       	</div>
+        <div class="section">
+          <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
+          <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
+            
+          </div>
+        </div>
       </div>
       <div id="gridInfo2" style="grid-area: infoDois;display: grid;">
       	<div id="infoDois" class="">
@@ -51,8 +60,13 @@
       		<div class="section center">
       			<a title="Baixar" class="waves-effect waves-light btn dl"><span class="valign-wrapper">BAIXAR <i class="tiny material-icons">file_download</i></span></a>
       		</div>
+          <div class="section center cinza container" style="font-size: 1.2em">
+            <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+            <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+            <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+          </div>
       		<div class="section ">
-      			<span>Publicado por</span>
+      			<span style="margin-left: 16px">Publicado por</span>
             <div class="ReferenciaPerfil white center" style=" display: block; margin: 0 auto">
               <a href="pr.php?p=fulano_de_talaaaaaaa">
                 <div style="grid-area: foto;">
@@ -66,10 +80,14 @@
             
       		</div>
       		<div class="section ">
-      			Em
+      			<span style="margin-left: 16px">Em</span>
             <div class="cinza center container" style="padding: 0.5em">30/01/2018</div>
       		</div>
       	</div>
+        <div class="section ">
+            <span style="margin-left: 16px">Codigo</span>
+            <div class="cinza center container" style="padding: 0.5em">1</div>
+          </div>
       </div>
     </div>
 </div>
