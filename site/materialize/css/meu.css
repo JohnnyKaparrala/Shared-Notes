@@ -1,4 +1,17 @@
+.no-txt-dec{
+  text-decoration: none;
+}
 
+.comentario{
+  display: grid;
+  grid-template:  "foto dados"/*nome e data*/
+                  "avaliacao comentario"
+                  "responder";/*botao pra resposta, focus na resposta e aparece o @fulano e scroll to barra de comentarios*/
+  grid-template-rows: 35px 40px;
+  grid-template-columns: 80px auto;
+  margin: 0.7em 0;
+  background-color: white;
+}
 
 .referenciaProjeto{
   display: grid;

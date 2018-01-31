@@ -41,7 +41,7 @@
             <div class="container">
 
   		      	<div class="referenciaProjeto">
-               <div style="grid-area: nome">
+               <div style="grid-area: nome" class="truncate">
                  <span class="truncate dBlue-txt ">Batatas Carinhosas (1.5)</span>
                </div>
                <div style="grid-area: foto">
@@ -54,7 +54,7 @@
                </div>
               </div>
               <div class="referenciaProjeto">
-               <div style="grid-area: nome">
+               <div style="grid-area: nome" class="truncate">
                  <span class="truncate dBlue-txt ">Batatas Carinhosas (1.4)</span>
                </div>
                <div style="grid-area: foto">
@@ -66,66 +66,44 @@
                   <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
                </div>
               </div>
-              <div class="referenciaProjeto">
-               <div style="grid-area: nome">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.3)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
-               </div>
-              </div>
-              <div class="referenciaProjeto">
-               <div style="grid-area: nome">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.2)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
-               </div>
-              </div>
-              <div class="referenciaProjeto">
-               <div style="grid-area: nome">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.1)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
-               </div>
-              </div>
-              <div class="referenciaProjeto">
-               <div style="grid-area: nome">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.0)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
-               </div>
-              </div>
-
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+              <a href="projpag.php?p=6" class="no-txt-dec">
+                <div class="referenciaProjeto">
+                   <div style="grid-area: nome" class="truncate">
+                     <span class="truncate dBlue-txt ">Batatas Carinhosas (1.0)</span>
+                   </div>
+                   <div style="grid-area: foto">
+                     <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+                   </div>
+                   <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                      <i class="material-icons" style="font-size: 0.8em">insert_comment</i> <span>2 |</span>
+                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+                   </div>
+                </div>
+              </a>
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
             </div>
 	      	</div>
       	</div>
         <div class="section">
+          <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
+          <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+            <div class="comentario">
+              
+            </div>
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+          </div>
+        </div>
+        <div class="section">
           <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
           <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-            
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+            <div class="comentario">
+              
+            </div>
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
           </div>
         </div>
       </div>
@@ -135,7 +113,7 @@
       			<img src="c.jpg" width="220px">
       		</div>
       		<div class="section center">
-      			<a title="Baixar" class="waves-effect waves-light btn dl"><span class="valign-wrapper">BAIXAR <i class="tiny material-icons">file_download</i></span></a>
+      			<a title='Baixar "1"' class="waves-effect waves-light btn dl"><span class="valign-wrapper">BAIXAR <i class="tiny material-icons">file_download</i></span></a>
       		</div>
           <div class="section center cinza container" style="font-size: 1.2em">
             <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
@@ -145,7 +123,7 @@
       		<div class="section ">
       			<span style="margin-left: 16px">Publicado por</span>
             <div class="ReferenciaPerfil white center" style=" display: block; margin: 0 auto;">
-              <a href="pr.php?p=fulano_de_talaaaaaaa">
+              <a href="pr.php?p=fulano_de_talaaaaaaa" title="Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaa">
                 <div style="grid-area: foto;">
                   <img src="a.jpg" width="80" class=" circle">
                 </div>
@@ -160,11 +138,11 @@
       			<span style="margin-left: 16px">Em</span>
             <div class="cinza center container" style="padding: 0.5em">30/01/2018</div>
       		</div>
-      	</div>
-        <div class="section ">
+          <div class="section ">
             <span style="margin-left: 16px">Codigo</span>
             <div class="cinza center container" style="padding: 0.5em">1</div>
           </div>
+      	</div>
       </div>
     </div>
   </div>
