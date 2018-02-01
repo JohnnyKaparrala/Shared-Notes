@@ -218,8 +218,11 @@
 	}
 
 	$(document).on('click', "a.dl", function() {
-		console.log('ab');
 		Materialize.toast('Adicionado aos downloads!', 4000);
+	});
+
+	$(document).on('click', "a.coment", function() {
+		Materialize.toast('Comentário adicionado!', 4000);
 	});
 
 	$(".button-collapse").sideNav();
@@ -227,4 +230,25 @@
 	if($( window ).width() >= 992){
 		$('.button-collapse').sideNav('hide');
 	};
+
+	function sendComent(){
+		var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	      document.getElementById("comentar").innerHTML = this.responseText;
+	    }
+	  };
+	  xhttp.open("POST", "comentar.php", true);
+	  xhttp.send();
+	}
 </script>
+
+<?php 
+	function check_input($data)
+	{
+	  $data = trim($data);
+	  $data = stripslashes($data);
+	  $data = htmlspecialchars($data);
+	  return $data;
+	}
+?>

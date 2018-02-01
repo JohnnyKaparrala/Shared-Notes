@@ -90,9 +90,9 @@
           <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
           <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
-            <div class="comentario">
+            <iframe class="row margin0" src="comentar.php" id="comentar">
               
-            </div>
+            </iframe>
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
           </div>
         </div>
@@ -101,7 +101,21 @@
           <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
             <div class="comentario">
-              
+              <div style="grid-area: foto">
+                
+              </div>
+              <div style="grid-area: dados">
+                
+              </div>
+              <div style="grid-area: avaliacao">
+                
+              </div>
+              <div style="grid-area: comentario">
+                
+              </div>
+              <div style="grid-area: responder">
+                
+              </div>
             </div>
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
           </div>
@@ -132,8 +146,11 @@
                 </div>
               </a>
             </div>
-            
       		</div>
+          <div class="section ">
+            <span style="margin-left: 16px">Downloads</span>
+            <div class="cinza center container" style="padding: 0.5em">10</div>
+          </div>
       		<div class="section ">
       			<span style="margin-left: 16px">Em</span>
             <div class="cinza center container" style="padding: 0.5em">30/01/2018</div>
