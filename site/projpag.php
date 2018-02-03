@@ -66,7 +66,6 @@
                   <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
                </div>
               </div>
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
               <a href="projpag.php?p=6" class="no-txt-dec">
                 <div class="referenciaProjeto">
                    <div style="grid-area: nome" class="truncate">
@@ -82,24 +81,30 @@
                    </div>
                 </div>
               </a>
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
             </div>
 	      	</div>
       	</div>
         <div class="section">
           <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
           <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
-            <iframe class="row margin0" src="comentar.php" id="comentar">
-              
-            </iframe>
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+            <div class="row margin0" id="comentar">
+              <form id="formComentario" class="col s12 margin0" action="funcoes/comentar.php">
+                <div class="row margin0">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" name="comentArea"></textarea>
+                    <label for="textarea1">Comentario</label>
+                  </div>
+                </div>
+              </form>
+              <div style="padding:1em">
+                <a class="waves-effect waves-light btn coment"><span class="valign-wrapper">enviar</span></a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="section">
           <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
           <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
             <div class="comentario">
               <div style="grid-area: foto">
                 
@@ -117,7 +122,6 @@
                 
               </div>
             </div>
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
           </div>
         </div>
       </div>

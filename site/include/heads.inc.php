@@ -108,7 +108,7 @@
 <script type="text/javascript">
 
 	function onload(){
-		setTimeout(function(){
+		$(document).ready(function(){
 			$("li.indicator").css("display","none");
 
 		 	for(i = 1; i <= 6; i++){
@@ -149,8 +149,6 @@
 	  		doc = parseInt(m);
 	  	}
 	  }
-
-	  console.log(m);
 
 	  var pagina;
 	  switch(doc){
@@ -231,19 +229,10 @@
 		$('.button-collapse').sideNav('hide');
 	};
 
-	function sendComent(){
-		var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("comentar").innerHTML = this.responseText;
-	    }
-	  };
-	  xhttp.open("POST", "comentar.php", true);
-	  xhttp.send();
-	}
 </script>
 
 <?php 
+
 	function check_input($data)
 	{
 	  $data = trim($data);

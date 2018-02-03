@@ -3184,7 +3184,7 @@ if (Vel) {
 
       // Fade out ripple after delay//////////////////////////
       setTimeout(function () {
-        /*var style = {
+        var style = {
           'top': relativeY + 'px',
           'left': relativeX + 'px',
           'opacity': '0',
@@ -3199,7 +3199,7 @@ if (Vel) {
           '-ms-transform': scale,
           '-o-transform': scale,
           'transform': scale
-        }*/;
+        };
 
         ripple.setAttribute('style', convertStyle(style));
 
