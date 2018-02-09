@@ -84,49 +84,9 @@
             </div>
 	      	</div>
       	</div>
-        <div class="section">
-          <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
-          <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-            <div class="row margin0" id="comentar">
-              <form id="formComentario" class="col s12 margin0" action="funcoes/comentar.php">
-                <div class="row margin0">
-                  <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea" name="comentArea"></textarea>
-                    <label for="textarea1">Comentario</label>
-                  </div>
-                </div>
-              </form>
-              <div style="padding:1em">
-                <a class="waves-effect waves-light btn coment"><span class="valign-wrapper">enviar</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
-          <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
-            <div class="comentario">
-              <div style="grid-area: foto">
-                
-              </div>
-              <div style="grid-area: dados">
-                
-              </div>
-              <div style="grid-area: avaliacao">
-                
-              </div>
-              <div style="grid-area: comentario">
-                
-              </div>
-              <div style="grid-area: responder">
-                
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div id="gridInfo2" style="grid-area: infoDois;display: grid;">
-      	<div id="infoDois" class="">
+      	<div id="infoDois">
       		<div class="section center">
       			<img src="c.jpg" width="220px">
       		</div>
@@ -166,6 +126,70 @@
       	</div>
       </div>
     </div>
+    <div class="section container">
+      <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
+      <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
+        <div class="row margin0" id="comentar">
+          <form id="formComentario" class="col s12 margin0" action="funcoes/comentar.php">
+            <div class="row margin0">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" name="comentArea"></textarea>
+                <label for="textarea1">Comentario</label>
+              </div>
+            </div>
+          </form>
+          <div style="padding:1em">
+            <a class="waves-effect waves-light btn coment"><span class="valign-wrapper">enviar <i class="tiny material-icons">send</i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section container">
+      <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
+      <div class="flow-text cinza" style="font-size: 1.1em;padding:1em;">
+        <div class="comentario">
+          <div style="grid-area: foto">
+            <img src="a.jpg" class="circle" width="45">
+          </div>
+          <div style="grid-area: dados">
+            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+            <span>em 12/14/1020</span>
+          </div>
+          <div style="grid-area: avaliacao; background-color: #fff">
+            ava
+          </div>
+          <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
+            <p class="comentario-txt flow-text">Lorem ipsum dolor sit amet, cum ex impetus scripserit, paulo referrentur signiferumque vis ad. Usu ex erat petentium definiebas, recusabo posidonium nam id, has error ceteros ex. Vidisse fierent periculis sit no, vix at utinam propriae forensibus. Dignissim sententiae cum et, an duo fugit efficiantur.</p>
+            <p class="comentario-txt flow-text">Eros vero urbanitas at vix, usu sale scriptorem in. At nec atqui molestiae. Meis viderer facilis ius eu. Persius dolores per no.</p>
+          </div>
+          <div style="grid-area: responder; background-color: #fff; padding: 12px">
+            <a class="valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+          </div>
+        </div>
+
+        <div class="comentario">
+          <div style="grid-area: foto">
+            <img src="a.jpg" class="circle" width="45">
+          </div>
+          <div style="grid-area: dados">
+            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+            <span>em 12/14/1020</span>
+          </div>
+          <div style="grid-area: avaliacao; background-color: #fff">
+            ava
+          </div>
+          <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
+            <p class="comentario-txt flow-text">Lorem ipsum dolor sit amet, cum ex impetus scripserit, paulo referrentur signiferumque vis ad. Usu ex erat petentium definiebas, recusabo posidonium nam id, has error ceteros ex. Vidisse fierent periculis sit no, vix at utinam propriae forensibus. Dignissim sententiae cum et, an duo fugit efficiantur.</p>
+            <p class="comentario-txt flow-text">Eros vero urbanitas at vix, usu sale scriptorem in. At nec atqui molestiae. Meis viderer facilis ius eu. Persius dolores per no.</p>
+          </div>
+          <div style="grid-area: responder; background-color: #fff; padding: 12px">
+            <a class="valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
   </div>
 <?php
 	include 'include/footer.inc.php';

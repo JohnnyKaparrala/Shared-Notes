@@ -4,12 +4,12 @@ iframe{
   width: 100%;
 }
 
-.coment{
-
+.comentario-txt{
+  margin: 0;
+  font-size: 1em
 }
 
 .comentar{
-  background-color: white;
   min-height: 7em;
   max-height: 8em;
   min-width: 200px;
@@ -24,15 +24,15 @@ iframe{
 
 .comentario{
   display: grid;
-  grid-template:  "foto dados"/*nome e data*/
+  grid-template:  "foto dados"
                   "avaliacao comentario"
-                  "responder";/*botao pra resposta, focus na resposta e aparece o @fulano e scroll to barra de comentarios*/
-  grid-template-rows: 35px 40px;
-  grid-template-columns: 80px auto;
-  margin: 0.7em 0;
-  background-color: white;
+                  "responder responder";
+  grid-template-rows: 50px auto;
+  grid-template-columns: 50px auto;
+  margin-bottom: 52px;
 }
-
+/*nome e data*/
+/*botao pra resposta, focus na resposta e aparece o @fulano e scroll to barra de comentarios*/
 .referenciaProjeto{
   display: grid;
   grid-template:  "foto nome"
