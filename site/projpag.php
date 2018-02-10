@@ -40,41 +40,46 @@
       		<div class="flow-text cinza" style="font-size: 1.1em;padding:1em;overflow-y: scroll;height: 10em">
             <div class="container">
 
-  		      	<div class="referenciaProjeto">
-               <div style="grid-area: nome" class="truncate">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.5)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
-               </div>
-              </div>
-              <div class="referenciaProjeto">
-               <div style="grid-area: nome" class="truncate">
-                 <span class="truncate dBlue-txt ">Batatas Carinhosas (1.4)</span>
-               </div>
-               <div style="grid-area: foto">
-                 <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
-               </div>
-               <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
-                  <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span  class="vermelho-txt">1</span>
-               </div>
-              </div>
-              <a href="projpag.php?p=6" class="no-txt-dec">
-                <div class="referenciaProjeto">
+              <a href="projpag.php?p=6">
+    		      	<div class="referenciaProjeto" title="Batatas Carinhosas (1.5)">
+                 <div style="grid-area: nome" class="truncate">
+                   <span class="truncate dBlue-txt ">Batatas Carinhosas (1.5)</span>
+                 </div>
+                 <div style="grid-area: foto">
+                   <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+                 </div>
+                 <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper black-text">
+                    <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                    <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
+                    <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+                 </div>
+                </div>
+              </a>
+              <a href="projpag.php?p=6">
+                <div class="referenciaProjeto" title="Batatas Carinhosas (1.4)">
+                 <div style="grid-area: nome" class="truncate">
+                   <span class="truncate dBlue-txt ">Batatas Carinhosas (1.4)</span>
+                 </div>
+                 <div style="grid-area: foto">
+                   <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
+                 </div>
+                 <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper black-text">
+                    <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
+                    <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
+                    <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span  class="vermelho-txt">1</span>
+                 </div>
+                </div>
+              </a>
+
+              <a href="projpag.php?p=6">
+                <div class="referenciaProjeto" title="Batatas Carinhosas (1.0)">
                    <div style="grid-area: nome" class="truncate">
                      <span class="truncate dBlue-txt ">Batatas Carinhosas (1.0)</span>
                    </div>
                    <div style="grid-area: foto">
                      <img src="c.jpg" width="50" class="circle" style="display: block; margin: auto">
                    </div>
-                   <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
+                   <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper black-text">
                       <i class="material-icons" style="font-size: 0.8em">insert_comment</i> <span>2 |</span>
                       <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
                       <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span class="vermelho-txt">1</span>
