@@ -158,7 +158,7 @@
           </div>
           <div style="grid-area: dados">
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span>em 12/14/1020</span>
+            <span>há 15 dias</span>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
@@ -183,7 +183,7 @@
           </div>
           <div style="grid-area: dados">
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span>em 12/14/1020</span>
+            <span>há 15 dias</span>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
