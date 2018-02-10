@@ -4,6 +4,27 @@ iframe{
   width: 100%;
 }
 
+.responder-btn{
+  /*clear:both;
+  float: left;*/
+  display: inline-block;
+  margin-left: 9px
+}
+
+.avaliar-btn{
+  font-size: 1.3em;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.verde-txt{
+  color: #2BBB80;
+}
+
+.vermelho-txt{
+  color: #EF535B
+}
+
 .comentario-txt{
   margin: 0;
   font-size: 1em

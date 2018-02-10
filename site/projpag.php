@@ -62,8 +62,8 @@
                </div>
                <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
                   <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
+                  <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span  class="vermelho-txt">1</span>
                </div>
               </div>
               <a href="projpag.php?p=6" class="no-txt-dec">
@@ -76,8 +76,8 @@
                    </div>
                    <div style="grid-area: avaliacao; font-size: 1em" class="valign-wrapper">
                       <i class="material-icons" style="font-size: 0.8em">insert_comment</i> <span>2 |</span>
-                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
+                      <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span class="vermelho-txt">1</span>
                    </div>
                 </div>
               </a>
@@ -95,8 +95,8 @@
       		</div>
           <div class="section center cinza container" style="font-size: 1.2em">
             <i class="material-icons" style="font-size: 0.8em">insert_comment</i> 2 |
-            <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span style="color: #2BBB80">6</span> |
-            <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span style="color: #EF535B">1</span>
+            <i class="material-icons" style="font-size: 1em">keyboard_arrow_up</i> <span class="verde-txt">6</span> |
+            <i class="material-icons" style="font-size: 1em">keyboard_arrow_down</i> <span class="vermelho-txt">1</span>
           </div>
       		<div class="section ">
       			<span style="margin-left: 16px">Publicado por</span>
@@ -155,15 +155,20 @@
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
             <span>em 12/14/1020</span>
           </div>
-          <div style="grid-area: avaliacao; background-color: #fff">
-            ava
+          <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
+            <div style="margin-top: 20%">
+              <i class="tiny material-icons">keyboard_arrow_up</i><span class="verde-txt">1</span><br><br>
+              <i class="tiny material-icons">keyboard_arrow_down</i><span class="vermelho-txt">2</span>
+            </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
             <p class="comentario-txt flow-text">Lorem ipsum dolor sit amet, cum ex impetus scripserit, paulo referrentur signiferumque vis ad. Usu ex erat petentium definiebas, recusabo posidonium nam id, has error ceteros ex. Vidisse fierent periculis sit no, vix at utinam propriae forensibus. Dignissim sententiae cum et, an duo fugit efficiantur.</p>
             <p class="comentario-txt flow-text">Eros vero urbanitas at vix, usu sale scriptorem in. At nec atqui molestiae. Meis viderer facilis ius eu. Persius dolores per no.</p>
           </div>
-          <div style="grid-area: responder; background-color: #fff; padding: 12px">
-            <a class="valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+          <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
+            <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
+            <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
+            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
 
@@ -175,15 +180,20 @@
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
             <span>em 12/14/1020</span>
           </div>
-          <div style="grid-area: avaliacao; background-color: #fff">
-            ava
+          <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
+            <div style="margin-top: 20%">
+              <i class="tiny material-icons">keyboard_arrow_up</i><span class="verde-txt">16</span><br><br>
+              <i class="tiny material-icons">keyboard_arrow_down</i><span class="vermelho-txt">0</span>
+            </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
             <p class="comentario-txt flow-text">Lorem ipsum dolor sit amet, cum ex impetus scripserit, paulo referrentur signiferumque vis ad. Usu ex erat petentium definiebas, recusabo posidonium nam id, has error ceteros ex. Vidisse fierent periculis sit no, vix at utinam propriae forensibus. Dignissim sententiae cum et, an duo fugit efficiantur.</p>
             <p class="comentario-txt flow-text">Eros vero urbanitas at vix, usu sale scriptorem in. At nec atqui molestiae. Meis viderer facilis ius eu. Persius dolores per no.</p>
           </div>
-          <div style="grid-area: responder; background-color: #fff; padding: 12px">
-            <a class="valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+          <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
+            <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
+            <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
+            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
         
