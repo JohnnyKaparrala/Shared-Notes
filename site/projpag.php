@@ -151,19 +151,19 @@
     </div>
     <div class="section container">
       <h6 class="dSBlue-txt" style="margin-left: 1em">Comentários:</h6>
-      <div class="flow-text cinza" style="font-size: 1.1em;padding:1em;">
+
+      <div id="area-comentarios" class="flow-text cinza" style="font-size: 1.1em;padding:1em;">
         <div class="comentario">
           <div style="grid-area: foto">
             <img src="a.jpg" class="circle" width="45">
           </div>
           <div style="grid-area: dados">
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span>há 15 dias</span>
+            <span class="tempo-comentario">há 15 dias</span>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
-              <i class="tiny material-icons">keyboard_arrow_up</i><span class="verde-txt">1</span><br><br>
-              <i class="tiny material-icons">keyboard_arrow_down</i><span class="vermelho-txt">2</span>
+              <span class="verde-txt center" style="font-size: 1.7em;">1</span>
             </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
@@ -183,12 +183,35 @@
           </div>
           <div style="grid-area: dados">
             <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span>há 15 dias</span>
+            <span class="tempo-comentario">há 23 dias</span>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
-              <i class="tiny material-icons">keyboard_arrow_up</i><span class="verde-txt">16</span><br><br>
-              <i class="tiny material-icons">keyboard_arrow_down</i><span class="vermelho-txt">0</span>
+              <span class="black-text center" style="font-size: 1.7em;">0</span>
+            </div>
+          </div>
+          <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
+            <p class="comentario-txt flow-text">Lorem ipsum dolor sit amet, cum ex impetus scripserit, paulo referrentur signiferumque vis ad. Usu ex erat petentium definiebas, recusabo posidonium nam id, has error ceteros ex. Vidisse fierent periculis sit no, vix at utinam propriae forensibus. Dignissim sententiae cum et, an duo fugit efficiantur.</p>
+            <p class="comentario-txt flow-text">Eros vero urbanitas at vix, usu sale scriptorem in. At nec atqui molestiae. Meis viderer facilis ius eu. Persius dolores per no.</p>
+          </div>
+          <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
+            <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
+            <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
+            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+          </div>
+        </div>
+
+        <div class="comentario">
+          <div style="grid-area: foto">
+            <img src="a.jpg" class="circle" width="45">
+          </div>
+          <div style="grid-area: dados">
+            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+            <span class="tempo-comentario">há 23 dias</span>
+          </div>
+          <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
+            <div style="margin-top: 20%">
+              <span class="vermelho-txt center" style="font-size: 1.7em;">-1</span>
             </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">

@@ -206,7 +206,6 @@
 		}
 
 	  xhttp.open("GET", pagina, true);
-
 	  xhttp.send();
 	}
 
@@ -220,7 +219,31 @@
 	});
 
 	$(document).on('click', "a.coment", function() {
+		var comentario = $("#textarea1").val().trim();
+		comentario = comentario.replace(/\n\r?/g, '<br />');
+
+		if( comentario.length == 0){
+			return;
+		}
+
+		var data = new FormData();
+		data.append('comentario', comentario);
+		//data.append('pwd', 'password');
+
+	  var xhttp = new XMLHttpRequest();
+	  
+	  xhttp.onreadystatechange = function() {
+    	if (this.readyState == 4 && this.status == 200) {
+    		$(this.responseText).hide().prependTo("#area-comentarios").fadeIn();
+      	//$("#area-comentarios").prepend(this.responseText);
+    	}
+    }
+    xhttp.open("POST", "inscoment.php", true);
+  	xhttp.send(data);
+
 		Materialize.toast('Comentário adicionado!', 4000);
+		$("#textarea1").val("");
+		$("#textarea1").classList.removeClass("active");
 	});
 
 	$(".button-collapse").sideNav();
