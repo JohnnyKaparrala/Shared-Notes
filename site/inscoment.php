@@ -12,8 +12,14 @@
     <img src="a.jpg" class="circle" width="45">
   </div>
   <div style="grid-area: dados">
-    <span class="comentario-txt truncate"><b>Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></span><br>
-    <span class="tempo-comentario">agora</span>
+  	<div class="nome-tempo">
+  		<div style="grid-area: nome">
+	    	<span class="comentario-txt truncate"><b>Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></span><br>
+	    </div>
+	    <div style="grid-area: tempo">
+	    	<span class="tempo-comentario">agora</span>
+	    </div>
+	  </div>
   </div>
   <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
     <div style="margin-top: 20%">

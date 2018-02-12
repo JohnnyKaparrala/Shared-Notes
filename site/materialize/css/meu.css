@@ -2,6 +2,14 @@
   font-size: 0.8em;
 }
 
+.nome-tempo{
+  display: grid;
+  grid-template:  "nome"
+                  "tempo";
+  grid-template-rows: 25px 25px;
+  grid-template-columns:minmax(1px, 1fr);
+}
+
 .responder-btn{
   /*clear:both;
   float: left;*/
@@ -47,7 +55,7 @@
                   "avaliacao comentario"
                   "responder responder";
   grid-template-rows: 50px auto;
-  grid-template-columns: 50px minmax(100px, 1fr);
+  grid-template-columns: 50px minmax(1px, 1fr);
   margin-bottom: 52px;
 }
 /*nome e data*/

@@ -158,12 +158,18 @@
             <img src="a.jpg" class="circle" width="45">
           </div>
           <div style="grid-area: dados">
-            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span class="tempo-comentario">há 15 dias</span>
+            <div class="nome-tempo">
+              <div style="grid-area: nome">
+                <span class="comentario-txt truncate"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+              </div>
+              <div style="grid-area: tempo">
+                <span class="tempo-comentario">há 2 dias</span>
+              </div>
+            </div>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
-              <span class="verde-txt center" style="font-size: 1.7em;">1</span>
+              <span class="verde-txt center" style="font-size: 1.7em;">6</span>
             </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
@@ -176,14 +182,20 @@
             <a onclick="responder('Jorge cara legaaaaaaaaaaaaaal')" class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
-        
+
         <div class="comentario">
           <div style="grid-area: foto">
             <img src="a.jpg" class="circle" width="45">
           </div>
           <div style="grid-area: dados">
-            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span class="tempo-comentario">há 23 dias</span>
+            <div class="nome-tempo">
+              <div style="grid-area: nome">
+                <span class="comentario-txt truncate"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+              </div>
+              <div style="grid-area: tempo">
+                <span class="tempo-comentario">há 4 dias</span>
+              </div>
+            </div>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
@@ -206,12 +218,18 @@
             <img src="a.jpg" class="circle" width="45">
           </div>
           <div style="grid-area: dados">
-            <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-            <span class="tempo-comentario">há 23 dias</span>
+            <div class="nome-tempo">
+              <div style="grid-area: nome">
+                <span class="comentario-txt truncate"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
+              </div>
+              <div style="grid-area: tempo">
+                <span class="tempo-comentario">há 4 dias</span>
+              </div>
+            </div>
           </div>
           <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
             <div style="margin-top: 20%">
-              <span class="vermelho-txt center" style="font-size: 1.7em;">-1</span>
+              <span class="vermelho-txt center" style="font-size: 1.7em;">-3</span>
             </div>
           </div>
           <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
