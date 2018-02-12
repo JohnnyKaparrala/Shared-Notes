@@ -176,7 +176,7 @@
             <a onclick="responder('Jorge cara legaaaaaaaaaaaaaal')" class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
-
+        
         <div class="comentario">
           <div style="grid-area: foto">
             <img src="a.jpg" class="circle" width="45">
