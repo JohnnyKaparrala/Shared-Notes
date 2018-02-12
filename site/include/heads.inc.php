@@ -243,10 +243,21 @@
 
 		Materialize.toast('Comentário adicionado!', 4000);
 		$("#textarea1").val("");
-		$("#textarea1").classList.removeClass("active");
+		$("#textarea1").focusout();
 	});
 
 	$(".button-collapse").sideNav();
+
+	function responder(u){
+		$('html, body').animate({
+        scrollTop: $("#scroll-point").offset().top - 49
+    }, 200);
+
+		$("#textarea1").val("@" + u);
+		$("#textarea1").focus();
+
+	}
+
 
 	if($( window ).width() >= 992){
 		$('.button-collapse').sideNav('hide');

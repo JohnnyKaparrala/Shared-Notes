@@ -11,8 +11,8 @@
     <img src="a.jpg" class="circle" width="45">
   </div>
   <div style="grid-area: dados">
-    <span class="comentario-txt flow-text"><b>Jorge cara legaaaaaaaaaaaaaal</b></span><br>
-    <span>agora</span>
+    <span class="comentario-txt flow-text"><b>Fulano de Talaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></span><br>
+    <span class="tempo-comentario">agora</span>
   </div>
   <div style="grid-area: avaliacao; background-color: #fff;font-size: 1.2em" class="center">
     <div style="margin-top: 20%">
@@ -20,11 +20,12 @@
     </div>
   </div>
   <div style="grid-area: comentario; background-color: #fff; padding: 12px 0 12px 12px">
-    <span class="tempo-comentario"><?php echo $comentario ?></span>
+    <span><?php echo $comentario ?></span>
   </div>
   <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
     <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
     <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
-    <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+    <!-- todo n pode responder o proprio comentario -->
+
   </div>
 </div>

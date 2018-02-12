@@ -132,7 +132,7 @@
       </div>
     </div>
     <div class="section container">
-      <h6 class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
+      <h6 id="scroll-point" class="dSBlue-txt" style="margin-left: 1em">Comentar:</h6>
       <div class="flow-text cinza" style="font-size: 1.1em;padding:1em">
         <div class="row margin0" id="comentar">
           <form id="formComentario" class="col s12 margin0" action="funcoes/comentar.php">
@@ -173,7 +173,7 @@
           <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
             <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
             <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
-            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+            <a onclick="responder('Jorge cara legaaaaaaaaaaaaaal')" class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
 
@@ -197,7 +197,7 @@
           <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
             <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
             <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
-            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+            <a onclick="responder('Jorge cara legaaaaaaaaaaaaaal')" class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
 
@@ -221,7 +221,7 @@
           <div class="valign-wrapper" style="grid-area: responder; background-color: #fff; padding: 12px">
             <a class="avaliar-btn pointer verde-txt"><i class="material-icons avaliar-btn">keyboard_arrow_up</i></a>
             <a class="avaliar-btn pointer vermelho-txt"><i class="material-icons avaliar-btn">keyboard_arrow_down</i></a>
-            <a class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
+            <a onclick="responder('Jorge cara legaaaaaaaaaaaaaal')" class="responder-btn valign-wrapper lBlue-txt pointer"><i class="tiny material-icons">keyboard_return</i>Responder</a>
           </div>
         </div>
         
